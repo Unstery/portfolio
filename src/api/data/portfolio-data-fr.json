@@ -195,7 +195,8 @@
                         "React Query",
                         "ESLint",
                         "React Hook Form"
-                    ]
+                    ],
+                    "content": ""
                 },
                 {
                     "id": "5",
@@ -209,7 +210,8 @@
                         "Selenium WebDriver",
                         "Pandas",
                         "Numpy"
-                    ]
+                    ],
+                    "content": "https://gitlab.istic.univ-rennes1.fr/bfaisant/de-foottalenttracker/-/blob/main/README.md"
                 },
                 {
                     "id": "4",
@@ -220,7 +222,8 @@
                     "skills": [
                         "Flutter",
                         "Dart"
-                    ]
+                    ],
+                    "content": "https://gitlab.istic.univ-rennes1.fr/bfaisant/wi_game/-/blob/main/README.md"
                 },
                 {
                     "id": "3",
@@ -235,7 +238,8 @@
                         "Quarkus",
                         "RabbitMQ",
                         "Nginx"
-                    ]
+                    ],
+                    "content": "https://gitlab.istic.univ-rennes1.fr/bfaisant/architecture-administration/-/blob/main/Architecture.md"
                 },
                 {
                     "id": "2",
@@ -247,7 +251,8 @@
                         "ANTLR",
                         "Java",
                         "C++"
-                    ]
+                    ],
+                    "content": "https://gitlab.istic.univ-rennes1.fr/kicornec/while_compiler/-/blob/main/README.md"
                 },
                 {
                     "id": "1",
@@ -261,7 +266,8 @@
                         "Node.js",
                         "NestJS",
                         "MongoDB"
-                    ]
+                    ],
+                    "content": ""
                 },
                 {
                     "id": "0",
@@ -273,7 +279,8 @@
                         "Java",
                         "XML",
                         "Firebase"
-                    ]
+                    ],
+                    "content": ""
                 }
             ]
         },
