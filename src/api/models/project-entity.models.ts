@@ -4,5 +4,6 @@ export interface ProjectEntity {
   endDate: Date,
   description: string,
   images?: string[],
-  skills: string[]
+  skills: string[],
+  content: string
 }

@@ -54,7 +54,8 @@
                     "description": "Front-end web application in React with the Next.js framework. Interaction with the backend developed in .NET.",
                     "skills": [
                         "TypeScript", "React", "Next.js", "Styled-components", "I18n", "React Hooks", "React Query", "ESLint", "React Hook Form"
-                    ]
+                    ],
+                    "content": ""
                 },
                 {
                     "title": "Evaluation of young football players in data engineering",
@@ -63,7 +64,8 @@
                     "description": "Data retrieval via web scraping (BeautifulSoup and Selenium WebDriver) and Pandas and Numpy for processing.",
                     "skills": [
                         "Python", "BeautifulSoup", "Selenium WebDriver", "Pandas", "Numpy"
-                    ]
+                    ],
+                    "content": "https://gitlab.istic.univ-rennes1.fr/bfaisant/de-foottalenttracker/-/blob/main/README.md"
                 },
                 {
                     "title": "Peer-to-peer mobile gaming application",
@@ -72,7 +74,8 @@
                     "description": "Flutter application for single and multiplayer challenges over Wi-Fi P2P.",
                     "skills": [
                         "Flutter", "Dart"
-                    ]
+                    ],
+                    "content": "https://gitlab.istic.univ-rennes1.fr/bfaisant/wi_game/-/blob/main/README.md"
                 },
                 {
                     "title": "Dockerized microservices of an association manager",
@@ -81,7 +84,8 @@
                     "description": "Architecture using NestJS, MySQL, Angular, Quarkus, RabbitMQ and Nginx.",
                     "skills": [
                         "NestJS", "MySQL", "Angular", "Quarkus", "RabbitMQ", "Nginx"
-                    ]
+                    ],
+                    "content": "https://gitlab.istic.univ-rennes1.fr/bfaisant/architecture-administration/-/blob/main/Architecture.md"
                 },
                 {
                     "title": "Development of a compiler for new programming language While in C++",
@@ -90,7 +94,8 @@
                     "description": "Compiler using ANTLR and Java to create a grammar lexer and parser, three-address code and runtime library for C++.",
                     "skills": [
                         "ANTLR", "Java", "C++"
-                    ]
+                    ],
+                    "content": "https://gitlab.istic.univ-rennes1.fr/kicornec/while_compiler/-/blob/main/README.md"
                 },
                 {
                     "title": "Flutter web application for managing training schedules",
@@ -99,7 +104,8 @@
                     "description": "Frontend web application in Flutter/Dart, API in NodeJS with the NestJS framework and database hosted in MongoDB.",
                     "skills": [
                         "Flutter", "Dart", "NodeJS", "NestJS", "MongoDB"
-                    ]
+                    ],
+                    "content": ""
                 },
                 {
                     "title": "Mobile application for signposting and cleaning up illegal dumping",
@@ -108,7 +114,8 @@
                     "description": "Android development in Java/XML with Android Studio and Visual Studio Code tools. Hosting of our database in Firebase.",
                     "skills": [
                         "Java", "XML", "Firebase"
-                    ]
+                    ],
+                    "content": ""
                 }
             ]
         },
