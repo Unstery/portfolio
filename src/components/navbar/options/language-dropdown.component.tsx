@@ -19,7 +19,7 @@ export const LanguageDropdown = () => {
       <select
         onChange={handleLanguageChange}
         value={i18n.language}
-        className="bg-background-300 dark:bg-background-600 text-text-700 dark:text-text-200"
+        className="bg-background-300 dark:bg-background-600 text-text-700 dark:text-text-200 cursor-pointer"
       >
         {languages.map((langCode) => (
           <option key={langCode} value={langCode}>
