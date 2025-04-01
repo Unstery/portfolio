@@ -10,6 +10,7 @@ import { PortfolioPage } from "./portfolio.page";
 import { CategoryEnum } from "../api/enum/category.enum";
 import { ExperiencePage } from "./experience.page";
 import { Navbar } from "./navbar";
+import { ThemeProvider } from "../modules/theme";
 
 const resources = {
   en: {
@@ -54,20 +55,22 @@ export const App = ({ category, entityId }: AppProps) => {
     <QueryClientProvider client={queryClient}>
       <I18nextProvider i18n={i18n}>
         <PortfolioProvider>
-          <Navbar
-            categoriesRef={categoriesRef}
-            activeCategory={activeCategory}
-            setActiveCategory={setActiveCategory}
-          />
-          {category === CategoryEnum.PROFILE && (
-            <PortfolioPage
+          <ThemeProvider>
+            <Navbar
               categoriesRef={categoriesRef}
+              activeCategory={activeCategory}
               setActiveCategory={setActiveCategory}
             />
-          )}
-          {category === CategoryEnum.EXPERIENCE && (
-            <ExperiencePage experienceId={entityId!} />
-          )}
+            {category === CategoryEnum.PROFILE && (
+              <PortfolioPage
+                categoriesRef={categoriesRef}
+                setActiveCategory={setActiveCategory}
+              />
+            )}
+            {category === CategoryEnum.EXPERIENCE && (
+              <ExperiencePage experienceId={entityId!} />
+            )}
+          </ThemeProvider>
         </PortfolioProvider>
       </I18nextProvider>
     </QueryClientProvider>

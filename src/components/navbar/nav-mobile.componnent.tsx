@@ -37,7 +37,7 @@ export const NavMobile = ({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="w-10 h-10 flex justify-center items-center bg-background-300 dark:bg-background-600 p-[10px] rounded-2xl"
+        className="w-10 h-10 flex justify-center items-center bg-background-300 dark:bg-background-600 p-[10px] rounded-2xl cursor-pointer"
       >
         <FontAwesomeIcon icon={faBars} className="w-4 h-4" />
       </button>
@@ -51,7 +51,7 @@ export const NavMobile = ({
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="w-10 h-10 flex justify-center items-center bg-background-300 dark:bg-background-600 p-[10px] rounded-2xl"
+          className="w-10 h-10 flex justify-center items-center bg-background-300 dark:bg-background-600 p-[10px] rounded-2xl cursor-pointer"
         >
           <FontAwesomeIcon icon={faXmark} className="w-4 h-4" />
         </button>
