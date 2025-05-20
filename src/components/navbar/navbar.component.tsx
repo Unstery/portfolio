@@ -6,7 +6,7 @@ import { NavMobile } from "./nav-mobile.componnent";
 import { Options } from "./options/options.component";
 
 interface NavbarProps {
-  categoriesRef: RefObject<HTMLElement[]>;
+  categoriesRef: RefObject<Map<string, HTMLElement>>;
   activeCategory: string | undefined;
   setActiveCategory: (activeCategory: string) => void;
 }
@@ -26,15 +26,16 @@ export const Navbar = ({
     (category) => category.type !== CategoryEnum.PROFILE
   );
 
-  const scrollToCategory = (index: number) => {
+  const scrollToCategory = (categoryId: string) => {
     const navbarHeight = document.querySelector(".navbar")?.clientHeight || 0;
     const targetPosition =
-      categoriesRef.current[index].offsetTop - navbarHeight;
+      categoriesRef.current.get(categoryId)!.offsetTop - navbarHeight;
     window.scrollTo({ top: targetPosition, behavior: "smooth" });
   };
 
   const handleScroll =
-    (i: number) => (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    (categoryId: string) =>
+    (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
       if (window.location.pathname !== "/") {
         return;
       }
@@ -45,15 +46,15 @@ export const Navbar = ({
       e.preventDefault();
       setActiveCategory(targetId);
       window.history.replaceState(null, "", `/#${targetId}`);
-      scrollToCategory(i);
+      scrollToCategory(categoryId);
     };
 
   useEffect(() => {
     const hash = window.location.hash.replace("#", "");
     if (hash) {
-      const index = categories.findIndex((category) => category.type === hash);
-      if (index !== -1) {
-        setTimeout(() => scrollToCategory(index), 100);
+      const category = categories.find((category) => category.type === hash);
+      if (category) {
+        setTimeout(() => scrollToCategory(category.id), 100);
       }
     }
   }, [categories]);
@@ -65,7 +66,7 @@ export const Navbar = ({
           <a
             href={`/#${category.type}`}
             key={category.id}
-            onClick={handleScroll(+category.id)}
+            onClick={handleScroll(category.id)}
             className={`${category.type === activeCategory ? "text-primary-200" : null}`}
           >
             {category.title}
@@ -82,7 +83,7 @@ export const Navbar = ({
       <a
         href={`/#${profileCategory.type}`}
         key={profileCategory.id}
-        onClick={handleScroll(+profileCategory.id)}
+        onClick={handleScroll(profileCategory.id)}
         className={`flex justify-center mx-4 text-2xl sm:text-2xl md:text-2xl lg:text-2xl font-bold ${profileCategory.type === activeCategory ? "text-primary-200" : null}`}
       >
         {`${profileCategory.firstName} ${profileCategory.lastName}`}

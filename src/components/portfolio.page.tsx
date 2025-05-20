@@ -6,7 +6,7 @@ import { Profile } from "./profile";
 import { Projects } from "./projects";
 
 interface PortfolioPageProps {
-  categoriesRef: RefObject<HTMLElement[]>;
+  categoriesRef: RefObject<Map<string, HTMLElement>>;
   setActiveCategory: (activeCategory: string | undefined) => void;
 }
 

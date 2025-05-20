@@ -40,7 +40,7 @@ interface AppProps {
 export const App = ({ category, entityId }: AppProps) => {
   const { i18n } = useTranslation();
 
-  const categoriesRef = useRef<HTMLElement[]>([]);
+  const categoriesRef = useRef<Map<string, HTMLElement>>(new Map());
 
   const [activeCategory, setActiveCategory] = useState<string | undefined>(
     "Profile"
