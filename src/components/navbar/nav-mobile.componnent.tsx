@@ -10,7 +10,7 @@ interface NavMobileProps {
   categories: CategoryType[];
   activeCategory: string | undefined;
   handleScroll: (
-    i: number
+    categoryId: string
   ) => (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
 }
 
@@ -27,8 +27,9 @@ export const NavMobile = ({
   });
 
   const handleNavClick =
-    (id: number) => (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-      handleScroll(id)(e);
+    (categoryId: string) =>
+    (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+      handleScroll(categoryId)(e);
       setIsOpen(false);
     };
 
@@ -60,7 +61,7 @@ export const NavMobile = ({
             <a
               href={`#${category.type}`}
               key={category.id}
-              onClick={handleNavClick(+category.id)}
+              onClick={handleNavClick(category.id)}
               className={`${category.type === activeCategory ? "text-primary-200" : null} w-full h-10 px-4 py-2 flex justify-center sm:justify-start hover:rounded-2xl hover:bg-background-300 hover:dark:bg-background-600`}
             >
               {category.title}

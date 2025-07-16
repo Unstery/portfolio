@@ -5,7 +5,7 @@ import { usePortfolio } from "../../modules/portfolio";
 import { LanguagesEnum } from "../../enums/languages.enum";
 
 interface ProfileProps {
-  categoriesRef: RefObject<HTMLElement[]>;
+  categoriesRef: RefObject<Map<string, HTMLElement>>;
 }
 
 const CV_FR = "/cv/Bastien_Faisant_CV.pdf";
@@ -34,8 +34,8 @@ export const Profile = ({ categoriesRef }: ProfileProps) => {
   return (
     <section
       ref={(element) => {
-        if (element && !categoriesRef.current.includes(element)) {
-          categoriesRef.current.push(element);
+        if (element) {
+          categoriesRef.current.set(profile.id, element);
         }
       }}
       id={profile.type}

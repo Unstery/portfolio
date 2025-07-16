@@ -4,7 +4,7 @@ import { usePortfolio } from "../../modules/portfolio";
 import { ExperienceItem } from "./experience-item.component";
 
 interface ExperienceProps {
-  categoriesRef: RefObject<HTMLElement[]>;
+  categoriesRef: RefObject<Map<string, HTMLElement>>;
 }
 
 export const Experience = ({ categoriesRef }: ExperienceProps) => {
@@ -16,8 +16,8 @@ export const Experience = ({ categoriesRef }: ExperienceProps) => {
     <section
       className="w-full flex flex-col gap-3"
       ref={(element) => {
-        if (element && !categoriesRef.current.includes(element)) {
-          categoriesRef.current.push(element);
+        if (element) {
+          categoriesRef.current.set(experience.id, element);
         }
       }}
       id={experience.type}

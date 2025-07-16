@@ -4,7 +4,7 @@ import { usePortfolio } from "../../modules/portfolio";
 import { ProjectItem } from "./project-item.component";
 
 interface ProjectsProps {
-  categoriesRef: RefObject<HTMLElement[]>;
+  categoriesRef: RefObject<Map<string, HTMLElement>>;
 }
 
 export const Projects = ({ categoriesRef }: ProjectsProps) => {
@@ -16,8 +16,8 @@ export const Projects = ({ categoriesRef }: ProjectsProps) => {
     <div
       className="w-full flex flex-col gap-3"
       ref={(element) => {
-        if (element && !categoriesRef.current.includes(element)) {
-          categoriesRef.current.push(element);
+        if (element) {
+          categoriesRef.current.set(projects.id, element);
         }
       }}
       id={projects.type}
