@@ -4,7 +4,7 @@ import { usePortfolio } from "../../modules/portfolio";
 import { EducationItem } from "./education-item.component";
 
 interface EducationProps {
-  categoriesRef: RefObject<HTMLElement[]>;
+  categoriesRef: RefObject<Map<string, HTMLElement>>;
 }
 
 export const Education = ({ categoriesRef }: EducationProps) => {
@@ -16,8 +16,8 @@ export const Education = ({ categoriesRef }: EducationProps) => {
     <section
       className="w-full flex flex-col gap-3"
       ref={(element) => {
-        if (element && !categoriesRef.current.includes(element)) {
-          categoriesRef.current.push(element);
+        if (element) {
+          categoriesRef.current.set(education.id, element);
         }
       }}
       id={education.type}
