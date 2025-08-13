@@ -1,21 +1,20 @@
 /* eslint-disable react/no-children-prop */
-import { useEffect, useState } from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import ReactMarkdown from 'react-markdown';
+import { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
 
-import { ProjectEntity } from '../../api/models';
-import { useDate } from '../../modules/portfolio';
+import { ProjectEntity } from "../../api/models";
+import { useDate } from "../../modules/portfolio";
 
 interface ProjectItemProps {
-  entity: ProjectEntity
+  entity: ProjectEntity;
 }
 
 const getProjectDate = (
   startDateString: Date,
   endDateString: Date,
-  formatDate: (date: Date, options: Intl.DateTimeFormatOptions) => string,
+  formatDate: (date: Date, options: Intl.DateTimeFormatOptions) => string
 ) => {
-  const options: Intl.DateTimeFormatOptions = { year: 'numeric' };
+  const options: Intl.DateTimeFormatOptions = { year: "numeric" };
   const startDate = new Date(startDateString);
   const endDate = new Date(endDateString);
   const startFormattedDate = formatDate(startDate, options);
@@ -47,7 +46,12 @@ export const ProjectItem = ({ entity }: ProjectItemProps) => {
       <p>{entity.description}</p>
       <div className="flex flex-wrap gap-2">
         {entity.skills.map((skill) => (
-          <p key={skill} className="py-1 px-3 rounded-2xl text-sm bg-primary-200 text-text-200">{skill}</p>
+          <p
+            key={skill}
+            className="py-1 px-3 rounded-2xl text-sm bg-primary-200 text-text-200"
+          >
+            {skill}
+          </p>
         ))}
       </div>
       {entity.content && <ReactMarkdown children={content} />}

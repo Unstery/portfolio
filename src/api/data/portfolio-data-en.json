@@ -134,7 +134,8 @@
                         "Langium",
                         "Language Server Protocol (LSP)",
                         "Arduino"
-                    ]
+                    ],
+                    "content": "robot-dsl-project.md"
                 },
                 {
                     "id": "9",
@@ -149,7 +150,8 @@
                         "Eclipse Leshan",
                         "Vue.js",
                         "Docker"
-                    ]
+                    ],
+                    "content": "lwm2m-project.md"
                 },
                 {
                     "id": "8",
@@ -162,7 +164,8 @@
                         "Spring",
                         "Spring Remoting",
                         "Java RMI"
-                    ]
+                    ],
+                    "content": "sr-project.md"
                 },
                 {
                     "id": "7",
@@ -177,7 +180,8 @@
                         "Hugging Face Transformers",
                         "Pandas",
                         "Numpy"
-                    ]
+                    ],
+                    "content": "image-captioning-project.md"
                 },
                 {
                     "id": "6",
@@ -196,7 +200,7 @@
                         "ESLint",
                         "React Hook Form"
                     ],
-                    "content": ""
+                    "content": null
                 },
                 {
                     "id": "5",
@@ -211,7 +215,7 @@
                         "Pandas",
                         "Numpy"
                     ],
-                    "content": "https://gitlab.istic.univ-rennes1.fr/bfaisant/de-foottalenttracker/-/blob/main/README.md"
+                    "content": "foot-talent-tracker-project.md"
                 },
                 {
                     "id": "4",
@@ -223,7 +227,7 @@
                         "Flutter",
                         "Dart"
                     ],
-                    "content": "https://gitlab.istic.univ-rennes1.fr/bfaisant/wi_game/-/blob/main/README.md"
+                    "content": "prog-mobile-project.md"
                 },
                 {
                     "id": "3",
@@ -239,7 +243,7 @@
                         "RabbitMQ",
                         "Nginx"
                     ],
-                    "content": "https://gitlab.istic.univ-rennes1.fr/bfaisant/architecture-administration/-/blob/main/Architecture.md"
+                    "content": null
                 },
                 {
                     "id": "2",
@@ -252,7 +256,7 @@
                         "Java",
                         "C++"
                     ],
-                    "content": "https://gitlab.istic.univ-rennes1.fr/kicornec/while_compiler/-/blob/main/README.md"
+                    "content": null
                 },
                 {
                     "id": "1",
@@ -267,7 +271,7 @@
                         "NestJS",
                         "MongoDB"
                     ],
-                    "content": ""
+                    "content": null
                 },
                 {
                     "id": "0",
@@ -280,7 +284,7 @@
                         "XML",
                         "Firebase"
                     ],
-                    "content": ""
+                    "content": "tipe-project.md"
                 }
             ]
         },
