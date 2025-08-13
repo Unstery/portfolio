@@ -30,7 +30,7 @@ Les différentes décharges sont sauvegardées sur Firebase avec des identifiant
 
 Ensuite, en plus d’ajouter et récupérer un item décharge depuis la base de données Firebase, nous pouvons aussi modifier un item “décharge”. En effet, dans notre application, un utilisateur peut créer une mission de nettoyage et donc, en validant la date, celle-ci est transmise automatiquement à la base de données pour modifier la date de la mission initialisé à null.
 
-<img src="./assets/schema_firebase.png" style="max-width: 500px; width: 100%;">
+![](./assets/schema_firebase.png)
 
 ### Appareil photo
 

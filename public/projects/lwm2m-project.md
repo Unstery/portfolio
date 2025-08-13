@@ -10,7 +10,7 @@ Le développement de la maquette pour la gestion des clients IoT repose sur la m
 Un des objectifs de notre expérimentation était d’établir une communication entre les 2 clients. Pour cela, nous avons défini un objet selon le modèle de données IPSO. Un objet IPSO est un ensemble de spécifications standardisées facilitant l’interopérabilité entre les objets connectés et l’Internet des Objets. Dans notre cas, notre objet de test comporte 2 ressources : “Tx” (pour la transmission de données) et “Rx” (pour la récupération de données). Ces ressources supportent les opérations de lecture et d’écriture.
 La démonstration du serveur met en avant sa capacité à gérer plusieurs clients et à coordonner les interactions entre eux. La structure présentant le processus de communication de notre démonstration est la suivante :
 
-<img src="./assets/structure_demo_LwM2M.png" style="max-width: 400px; width: 100%;">
+![](./assets/structure_demo_LwM2M.png)
 
 Une fois les 2 clients enregistrés dans le serveur (1), le serveur observe les ressources “Tx” de chaque client (2). Lorsque cette ressource est modifiée par le client, celui-ci envoie une notification au serveur (3) pour informer du changement. Le serveur récupère la valeur de la ressource “Tx” du client notifiant le changement et l’écrit sur la ressource “Rx” de l’autre client (4). Ce processus est réalisé de manière bidirectionnelle entre les 2 clients.
 

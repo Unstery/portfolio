@@ -17,4 +17,4 @@ export const formatDate = (
 ) => (
   date: Date,
   options: Intl.DateTimeFormatOptions
-) => new Intl.DateTimeFormat(i18n.language, options).format(date);
+) => new Intl.DateTimeFormat(i18n.language, options).format(new Date(date));

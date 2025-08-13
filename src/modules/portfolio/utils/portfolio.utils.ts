@@ -5,7 +5,8 @@ import {
   ExperienceEntity,
   PortfolioRoot,
   Profile,
-  Project
+  Project,
+  ProjectEntity
 } from '../../../api/models';
 
 export const findCategories = (
@@ -37,3 +38,9 @@ export const findProjects = (
   portfolioRoot: PortfolioRoot
 ) => () => portfolioRoot.categories
   .find((category) => category.type === CategoryEnum.PROJECT) as Project;
+
+export const findProjectById = (
+  portfolioRoot: PortfolioRoot
+) => (projectId: string) => portfolioRoot.categories
+  .find((category) => category.type === CategoryEnum.PROJECT)
+  ?.entities.find((projectEntity) => projectEntity.id === projectId) as ProjectEntity;

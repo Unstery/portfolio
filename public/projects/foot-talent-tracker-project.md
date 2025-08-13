@@ -61,14 +61,12 @@ Cependant, la récupération des photos des joueurs prend quelques secondes avan
 De plus, avec cet affichage, un tableau des 5 meilleurs jeunes joueurs pour chaque poste est créé afin de visualiser qui sont les éventuels remplaçants.
 
 Voici une des visualisations obtenues des meilleurs jeunes joueurs de Premier League :
-<p align="center">
-    <img src="./assets/lineups_under_23_PremierLeague.png"  width="300" alt="Meilleurs jeunes joueurs de Premier League" >
-</p>
+
+![](./assets/lineups_under_23_PremierLeague.png)
 
 Et le classement associé pour chaque poste avec l'affichage de tous les scores des statistiques ainsi que le score total :
-<p align="center">
-    <img src="./assets/ranking_under_23_PremierLeague.png"  width="600" alt="Meilleurs jeunes joueurs de Premier League" >
-</p>
+
+![](./assets/ranking_under_23_PremierLeague.png)
 
 ## Limites du projet
 
