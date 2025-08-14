@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-import { calculateMonthDiff, formatDate } from '../utils/date.utils';
+import { calculateMonthDiff, formatDate, formatDateRange } from '../utils/date.utils';
 
 export const useDate = () => {
   const { i18n } = useTranslation();
@@ -8,5 +8,6 @@ export const useDate = () => {
   return {
     calculateMonthDiff,
     formatDate: formatDate(i18n),
+    formatDateRange: formatDateRange(i18n),
   };
 };

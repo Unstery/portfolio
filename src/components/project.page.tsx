@@ -12,21 +12,22 @@ export const ProjectPage = ({ projectId }: ProjectPageProps) => {
   const { findProjectById } = usePortfolio();
   const project = findProjectById(projectId);
 
-  const { formatDate } = useDate();
+  const { formatDateRange } = useDate();
   const options: Intl.DateTimeFormatOptions = {
     year: "numeric",
   };
-  const startDate = formatDate(project.startDate, options);
-  const endDate = formatDate(project.endDate, options);
+  const dateRange = formatDateRange(
+    project.startDate,
+    project.endDate,
+    options
+  );
 
   return (
     <div className="px-5 mx-auto max-w-screen-lg mb-5 flex flex-col gap-5">
       <div className="flex flex-col sm:flex-row justify-evenly items-center">
         <div className="flex flex-row gap-2 items-center">
           <FontAwesomeIcon icon={faCalendar} className="w-4 h-4" />
-          <p>
-            {startDate === endDate ? startDate : `${startDate} - ${endDate}`}
-          </p>
+          <p>{dateRange}</p>
         </div>
       </div>
       <h2 className="text-primary-200 text-2xl font-bold text-center">
@@ -43,7 +44,7 @@ export const ProjectPage = ({ projectId }: ProjectPageProps) => {
         ))}
       </div>
       <p className="text-justify">{project.description}</p>
-      {project.content && <MarkdownRenderer contentUrl={project.content} />}
+      {project.content && <MarkdownRenderer content={project.content} />}
     </div>
   );
 };

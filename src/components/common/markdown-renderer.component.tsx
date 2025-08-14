@@ -5,17 +5,17 @@ import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import remarkGfm from "remark-gfm";
 
 interface MarkdownRendererProps {
-  contentUrl?: string;
+  content?: string;
 }
 
-export const MarkdownRenderer = ({ contentUrl }: MarkdownRendererProps) => {
+export const MarkdownRenderer = ({ content }: MarkdownRendererProps) => {
   const [markdownContent, setMarkdownContent] = useState<string>();
 
   useEffect(() => {
-    fetch(`${contentUrl}`)
+    fetch(`${content}`)
       .then((response) => response.text())
       .then((text) => setMarkdownContent(text));
-  }, [contentUrl]);
+  }, [content]);
 
   const components: Components = {
     code({ children, className }) {

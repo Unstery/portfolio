@@ -18,3 +18,15 @@ export const formatDate = (
   date: Date,
   options: Intl.DateTimeFormatOptions
 ) => new Intl.DateTimeFormat(i18n.language, options).format(new Date(date));
+
+export const formatDateRange = (
+  i18n: i18n
+) => (
+  startDateString: Date,
+  endDateString: Date,
+  options: Intl.DateTimeFormatOptions
+) => {
+    const startFormattedDate = formatDate(i18n)(startDateString, options);
+    const endFormattedDate = formatDate(i18n)(endDateString, options);
+    return startFormattedDate === endFormattedDate ? startFormattedDate : `${startFormattedDate}/${endFormattedDate}`;
+  }
