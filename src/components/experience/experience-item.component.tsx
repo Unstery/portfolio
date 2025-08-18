@@ -5,27 +5,13 @@ interface ExperienceItemProps {
   entity: ExperienceEntity;
 }
 
-const getExperienceDate = (
-  startDateString: Date,
-  endDateString: Date,
-  formatDate: (date: Date, options: Intl.DateTimeFormatOptions) => string
-) => {
+export const ExperienceItem = ({ entity }: ExperienceItemProps) => {
+  const { formatDateRange } = useDate();
   const options: Intl.DateTimeFormatOptions = {
     month: "long",
     year: "numeric",
   };
-  const startDate = new Date(startDateString);
-  const endDate = new Date(endDateString);
-  const startFormattedDate = formatDate(startDate, options);
-  const endFormattedate = formatDate(endDate, options);
-
-  return `${startFormattedDate} / ${endFormattedate}`;
-};
-
-export const ExperienceItem = ({ entity }: ExperienceItemProps) => {
-  const { formatDate } = useDate();
-
-  const date = getExperienceDate(entity.startDate, entity.endDate, formatDate);
+  const dateRange = formatDateRange(entity.startDate, entity.endDate, options);
 
   return (
     <a href={`/experiences/${entity.id}`}>
@@ -42,7 +28,7 @@ export const ExperienceItem = ({ entity }: ExperienceItemProps) => {
             </h3>
             <p className="text-primary-200 font-semibold">{entity.company}</p>
             <p>{entity.location}</p>
-            <p>{date}</p>
+            <p>{dateRange}</p>
           </div>
         </div>
         <div>

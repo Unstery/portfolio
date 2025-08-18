@@ -7,9 +7,10 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	darkMode: 'class',
 	theme: {
-		colors,
-		fontFamily,
-		extend: {},
+		extend: {
+      		colors,
+      		fontFamily,
+    	},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography')],
 }

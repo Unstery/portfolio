@@ -11,6 +11,7 @@ import { CategoryEnum } from "../api/enum/category.enum";
 import { ExperiencePage } from "./experience.page";
 import { Navbar } from "./navbar";
 import { ThemeProvider } from "../modules/theme";
+import { ProjectPage } from "./project.page";
 
 const resources = {
   en: {
@@ -69,6 +70,9 @@ export const App = ({ category, entityId }: AppProps) => {
             )}
             {category === CategoryEnum.EXPERIENCE && (
               <ExperiencePage experienceId={entityId!} />
+            )}
+            {category === CategoryEnum.PROJECT && (
+              <ProjectPage projectId={entityId!} />
             )}
           </ThemeProvider>
         </PortfolioProvider>
