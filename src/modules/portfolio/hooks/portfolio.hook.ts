@@ -7,6 +7,7 @@ import {
   findExperience,
   findExperienceById,
   findProfile,
+  findProjectById,
   findProjects
 } from '../utils/portfolio.utils';
 
@@ -20,5 +21,6 @@ export const usePortfolio = () => {
     findExperience: findExperience(portfolioRoot),
     findExperienceById: findExperienceById(portfolioRoot),
     findProjects: findProjects(portfolioRoot),
+    findProjectById: findProjectById(portfolioRoot)
   };
 };
