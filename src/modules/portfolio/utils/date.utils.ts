@@ -28,5 +28,5 @@ export const formatDateRange = (
 ) => {
     const startFormattedDate = formatDate(i18n)(startDateString, options);
     const endFormattedDate = formatDate(i18n)(endDateString, options);
-    return startFormattedDate === endFormattedDate ? startFormattedDate : `${startFormattedDate}/${endFormattedDate}`;
+    return startFormattedDate === endFormattedDate ? startFormattedDate : `${startFormattedDate} - ${endFormattedDate}`;
   }
