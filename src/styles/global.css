@@ -1,2 +1,25 @@
 @import "tailwindcss";
-@config "../../tailwind.config.cjs";
+
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-200: #0891b2;
+
+  --color-background-200: #fefefe;
+  --color-background-300: #efefef;
+  --color-background-600: #1e293c;
+  --color-background-700: #1d232a;
+  --color-background-900: #000000;
+
+  --color-text-0: #ffffff;
+  --color-text-200: #fcfbf9;
+  --color-text-700: #121212;
+  --color-text-900: #000000;
+
+  --color-information: #34bcf1;
+  --color-success: #2ecc71;
+  --color-error: #e74c3c;
+  --color-warning: #f5b00a;
+}
