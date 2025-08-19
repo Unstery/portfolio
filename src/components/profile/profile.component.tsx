@@ -66,7 +66,7 @@ export const Profile = ({ categoriesRef }: ProfileProps) => {
             href={cvPdf}
             // download={`cv_${i18n.language}_bastien_faisant`} // Directly download the PDF file
             target="_blank" // Open the PDF file in another tab
-            className="h-full flex justify-center items-center text-center p-3 rounded-2xl bg-primary-200 dark:bg-primary-200 text-text-200 dark:text-text-200 font-bold"
+            className="h-full flex justify-center items-center text-center p-3 rounded-2xl bg-primary-200 text-text-200 font-bold"
             rel="noreferrer"
           >
             {t("downloadResume")}
