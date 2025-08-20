@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { useDate, usePortfolio } from "../modules/portfolio";
+import { SkillsList } from "./common";
 
 interface ExperiencePageProps {
   experienceId: string;
@@ -49,15 +50,8 @@ export const ExperiencePage = ({ experienceId }: ExperiencePageProps) => {
         {experience.title}
       </h2>
       <h3 className="text-xl font-bold text-center">{experience.project}</h3>
-      <div className="flex flex-wrap gap-2 justify-center">
-        {experience.skills.map((skill) => (
-          <p
-            key={skill}
-            className="py-1 px-3 rounded-2xl text-sm bg-primary-200 text-text-200"
-          >
-            {skill}
-          </p>
-        ))}
+      <div className="flex justify-center">
+        <SkillsList skills={experience.skills} />
       </div>
       <p className="text-justify">{experience.detail}</p>
       <div>

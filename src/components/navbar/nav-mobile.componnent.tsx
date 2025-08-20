@@ -43,7 +43,7 @@ export const NavMobile = ({
         <FontAwesomeIcon icon={faBars} className="w-4 h-4" />
       </button>
       {isOpen && (
-        <div className="w-screen max-w-full h-screen absolute top-0 left-0 bg-background-900/60" />
+        <div className="w-screen max-w-full h-screen absolute top-0 left-0 bg-black/60" />
       )}
       <div
         ref={ref}

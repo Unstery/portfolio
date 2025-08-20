@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 
 import { useDate, usePortfolio } from "../modules/portfolio";
-import { MarkdownRenderer } from "./common/markdown-renderer.component";
+import { MarkdownRenderer, SkillsList } from "./common";
 
 interface ProjectPageProps {
   projectId: string;
@@ -33,15 +33,8 @@ export const ProjectPage = ({ projectId }: ProjectPageProps) => {
       <h2 className="text-primary-200 text-2xl font-bold text-center">
         {project.title}
       </h2>
-      <div className="flex flex-wrap gap-2 justify-center">
-        {project.skills.map((skill) => (
-          <p
-            key={skill}
-            className="py-1 px-3 rounded-2xl text-sm bg-primary-200 text-text-200"
-          >
-            {skill}
-          </p>
-        ))}
+      <div className="flex justify-center">
+        <SkillsList skills={project.skills} />
       </div>
       <p className="text-justify">{project.description}</p>
       {project.content && <MarkdownRenderer content={project.content} />}
