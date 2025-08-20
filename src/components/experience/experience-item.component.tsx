@@ -1,5 +1,6 @@
 import { ExperienceEntity } from "../../api/models";
 import { useDate } from "../../modules/portfolio";
+import { SkillsList } from "../common";
 
 interface ExperienceItemProps {
   entity: ExperienceEntity;
@@ -35,16 +36,7 @@ export const ExperienceItem = ({ entity }: ExperienceItemProps) => {
           <h4 className="font-semibold">{entity.project}</h4>
           <p>{entity.description}</p>
         </div>
-        <div className="flex flex-wrap gap-2">
-          {entity.skills.map((skill) => (
-            <p
-              key={skill}
-              className="py-1 px-3 rounded-2xl text-sm bg-primary-200 text-text-200"
-            >
-              {skill}
-            </p>
-          ))}
-        </div>
+        <SkillsList skills={entity.skills} />
       </div>
     </a>
   );

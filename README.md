@@ -15,7 +15,7 @@ You can access the live website here: [My Portfolio](https://bastienfaisant.verc
 ## 💻 Technologies Used
 - React
 - Astro (static site generator)
-- Tailwind
+- Tailwindcss
 - i18n
 - React Query
 - ESLint
@@ -39,7 +39,8 @@ The project structure is organized as follows:
 │   │   └── portfolio/
 │   ├── pages/
 │   │   └── index.astro
-│   ├── theme/
+│   ├── styles/
+│   │   └── global.css
 │   └── translations/
 │       ├── en.json
 │       └── fr.json
@@ -54,7 +55,7 @@ Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
   - `layouts/`: Contains layout components to structure the website's pages.
   - `modules/`: Includes shared logic or utility functions used across the project.
   - `pages/`: Contains the individual pages of the website.
-  - `theme/`: Houses styling and theming related assets, such as CSS or design system components.
+  - `styles/`: Houses styling and theming related assets, such as CSS or design system components.
   - `translations/`: Stores translation files for multi-language support.
 - `astro.config.mjs`: Configuration file for Astro.
 - `package.json`: Project dependencies.
