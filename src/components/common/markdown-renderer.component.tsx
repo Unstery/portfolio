@@ -31,7 +31,7 @@ export const MarkdownRenderer = ({ content }: MarkdownRendererProps) => {
   };
 
   return (
-    <article className="prose dark:prose-invert mx-auto max-w-screen-lg prose-headings:border-b-1 prose-headings:border-current/25 prose-headings:pb-2.5 prose-h1:text-3xl prose-pre:bg-transparent prose-pre:p-0 prose-code:before:hidden prose-code:after:hidden prose-code:bg-gray-200 dark:prose-code:bg-gray-700 prose-code:px-1.5 py-1 prose-code:rounded prose-code:font-medium prose-code:text-sm prose-code:text-primary-200">
+    <article className="prose dark:prose-invert mx-auto max-w-screen-lg prose-headings:border-b-1 prose-headings:border-current/25 prose-headings:pb-2.5 prose-h1:text-3xl prose-pre:bg-transparent prose-pre:p-0 prose-code:before:hidden prose-code:after:hidden prose-code:bg-code/10 dark:prose-code:bg-code prose-code:px-1.5 py-1 prose-code:rounded prose-code:font-medium prose-code:text-sm prose-code:text-primary-200">
       <div className="p-8 border-1 rounded-lg border-current/25 bg-background-300/80 dark:bg-background-600/80">
         <Markdown remarkPlugins={[remarkGfm]} components={components}>
           {markdownContent}
