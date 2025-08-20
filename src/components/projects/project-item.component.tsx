@@ -16,7 +16,7 @@ export const ProjectItem = ({ entity }: ProjectItemProps) => {
 
   return (
     <a href={`/projects/${entity.id}`}>
-      <div className="p-4 flex flex-col gap-1 rounded-lg bg-background-300 dark:bg-background-600">
+      <div className="p-4 flex flex-col gap-1 rounded-2xl bg-background-300 dark:bg-background-600">
         <h3 className="text-xl font-bold">{entity.title}</h3>
         <p>{dateRange}</p>
         <p>{entity.description}</p>
