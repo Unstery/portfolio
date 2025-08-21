@@ -123,10 +123,16 @@
             "entities": [
                 {
                     "id": "10",
-                    "title": "Création d'un langage dédié (Domain-specific language) pour définir le comportement d'un robot",
+                    "title": "Langage dédié (DSL) pour définir le comportement d'un robot",
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
-                    "description": "Modélisation et implémentation du domaine avec Ecore. Création de la grammaire avec Langium (en TypeScript). Développement d'un interpréteur pour simulateur Web et d'un compilateur en code Arduino.",
+                    "description": "Création d'un langage dédié (Domain-specific language) pour définir le comportement d'un robot via la création d'un compilateur pour interagir avec le robot et d'un interpréteur pour le simuler.",
+                    "tasks": [
+                        "Modélisation et implémentation du domaine avec Ecore",
+                        "Création de la grammaire avec Langium (TypeScript)",
+                        "Développement d'un interpréteur pour simulateur Web",
+                        "Développement d'un compilateur en code Arduino"
+                    ],
                     "skills": [
                         "Eclipse Modeling Framework",
                         "Ecore",
@@ -145,14 +151,22 @@
                     "title": "Architecture en micro-services Client-Serveur avec le protocole de communication  LwM2M",
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
-                    "description": "Analyse du protocole et Mise en place d'une implémentation Client-Serveur via l'utilisation de la bibliothèque Java Eclipse Leshan. Backend en Java Spring Boot et Interface web en Vue.js.",
+                    "description": "Projet industriel visant à étudier la faisabilité d'une architecture Open Source couvrant le protocole LwM2M et réalisation d'une maquette l'implémentant dans un système avec différents appareils connectés.",
+                    "tasks": [
+                        "Analyse des protocoles de communication IoT",
+                        "Etude de l'intégration du protocole LwM2M dans une architecture en microservices",
+                        "Description d'une architecture utilisant les technologies étudiées",
+                        "Implémentation d'un démonstrateur d'une architecture LwM2M dans un système avec appareils connectés"
+                    ],
                     "skills": [
                         "Java",
                         "Spring",
                         "Spring Boot",
                         "Eclipse Leshan",
                         "Vue.js",
-                        "Docker"
+                        "Docker",
+                        "LwM2M",
+                        "CoAP"
                     ],
                     "contents": [
                         "lwm2m-project"
@@ -160,15 +174,24 @@
                 },
                 {
                     "id": "8",
-                    "title": "Implémentation d'un jeu distribué sur modèle Client-Serveur en Java RMI",
+                    "title": "Jeu distribué sur modèle Client-Serveur",
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
-                    "description": "Serveur développé avec le framework Spring et la technologie Spring Remoting RMI.",
+                    "description": "Implémentation d'un jeu distribué sur modèle Client-Serveur en Java RMI permettant à plusieurs joueurs de s'affronter dans un environnement de jeu en temps réel.",
+                    "tasks": [
+                        "Conception de l'architecture du jeu",
+                        "Implémentation du serveur de jeu en Java RMI (Java, Spring Boot, Spring Remoting RMI)",
+                        "Développement des clients de jeu en Java RMI (Java, Spring Boot, Spring Remoting RMI)",
+                        "Gestion des interactions entre les joueurs"
+                    ],
                     "skills": [
                         "Java",
                         "Spring",
+                        "Spring Boot",
                         "Spring Remoting",
-                        "Java RMI"
+                        "Java RMI",
+                        "Maven",
+                        "JUnit"
                     ],
                     "contents": [
                         "sr-project"
@@ -177,9 +200,10 @@
                 {
                     "id": "7",
                     "title": "Génération de légendes pour des images de nourriture (Image Captioning)",
-                    "startDate": "2023-01-01",
-                    "endDate": "2023-01-01",
+                    "startDate": "2024-01-01",
+                    "endDate": "2024-01-01",
                     "description": "Entrainement d'un modèle sur un ensemble de données, développé en Python avec les bibliothèques d'apprentissage machine TensorFlow et PyTorch et affiné (fine-tuned) avec un modèle de transformateurs pré-entraînés de la bibliothèque Hugging Face Transformers.",
+                    "tasks": [],
                     "skills": [
                         "Python",
                         "TensorFlow",
@@ -195,9 +219,15 @@
                 {
                     "id": "5",
                     "title": "Évaluation des jeunes joueurs de football en data engineering",
-                    "startDate": "2022-01-01",
+                    "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
-                    "description": "Récupération des données via web scraping (BeautifulSoup et Selenium WebDriver) et Pandas et Numpy pour le traitement.",
+                    "description": "Analyse des données de scouting pour les joueurs de football en Europe. L'objectif est de repérer les futures pépites des 7 plus grands championnats européens en se concentrant sur les joueurs de moins de 23 ans.",
+                    "tasks": [
+                        "Récupération des données de joueurs de football via web scraping (BeautifulSoup et Selenium WebDriver)",
+                        "Traitement des données avec Pandas et Numpy",
+                        "Analyse des performances des joueurs",
+                        "Visualisation des données"
+                    ],
                     "skills": [
                         "Python",
                         "BeautifulSoup",
@@ -212,9 +242,17 @@
                 {
                     "id": "4",
                     "title": "Application de jeux mobile en pair-à-pair",
-                    "startDate": "2022-01-01",
+                    "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
-                    "description": "Application Flutter pour des défis solo et multijoueur en Wi-Fi Peer-to-Peer.",
+                    "description": "Application de jeux en pair-à-pair. Cette application propose 6 défis à relever seul ou à plusieurs grâce à la technologie Wi-Fi Peer-to-Peer.",
+                    "tasks": [
+                        "Conception de l'architecture de l'application (Flutter, Dart)",
+                        "Développement d'une connexion avec la technologie WiFi Peer-to-Peer (Flutter)",
+                        "Conception d'un mode compétition pour jouer en mode solo ou multijoueur. Le mode multijoueur permet de jouer avec des joueurs proches à l'aide du WiFi direct.",
+                        "Conception d'un mode entraînement pour jouer aux défis à volonté",
+                        "Sauvegarde des scores",
+                        "Réalisation de démonstrations"
+                    ],
                     "skills": [
                         "Flutter",
                         "Dart"
@@ -225,17 +263,28 @@
                 },
                 {
                     "id": "3",
-                    "title": "Microservices dockerisés d'un gestionnaire d'association",
-                    "startDate": "2022-01-01",
+                    "title": "Architecture en microservices d'un gestionnaire d'association",
+                    "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
-                    "description": "Architecture utilisant NestJS, MySQL, Angular, Quarkus, RabbitMQ et Nginx.",
+                    "description": "Application web permettant d'accéder à un système de gestion administratif d'associations et d'envoyer des mails aux membres des associations.",
+                    "tasks": [
+                        "Conception de l'architecture de la solution",
+                        "Conception d'un client frontend (Angular)",
+                        "Conception d'un serveur API (NestJS) communiquant avec la base de données",
+                        "Conception d'un microservice de notification (Quarkus)",
+                        "Envoi de message AMQP à la queue du MOM (MessageOriented Middleware) RabbitMQ",
+                        "Mise en place d'un serveur web frontend Nginx"
+                    ],
                     "skills": [
+                        "TypeScript",
+                        "Node.js",
                         "NestJS",
-                        "MySQL",
                         "Angular",
+                        "MySQL",
                         "Quarkus",
                         "RabbitMQ",
-                        "Nginx"
+                        "Nginx",
+                        "Docker"
                     ],
                     "contents": [
                         "architecture-administration",
@@ -246,9 +295,16 @@
                 {
                     "id": "2",
                     "title": "Compilateur pour un nouveau langage de programmation While en C++",
-                    "startDate": "2022-01-01",
+                    "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
-                    "description": "Compilateur utilisant ANTLR et Java pour créer un lexer et un parser de grammaire, un code 3 adresses et une bibliothèque d'exécution pour C++.",
+                    "description": "Conception et implémentation d'un compilateur pour un nouveau langage de programmation While, avec génération de code intermédiaire en 3 adresses et implémentation d'une bibliothèque d'exécution en C++.",
+                    "tasks": [
+                        "Conception de la grammaire du langage While",
+                        "Création du lexer et du parser avec ANTLR",
+                        "Génération du code intermédiaire en 3 adresses",
+                        "Implémentation de la bibliothèque d'exécution pour C++",
+                        "Tests unitaires et validation du compilateur"
+                    ],
                     "skills": [
                         "ANTLR",
                         "Java",
@@ -263,7 +319,15 @@
                     "title": "Application mobile de signalisation et de nettoyage de dépôts sauvages",
                     "startDate": "2021-01-01",
                     "endDate": "2021-01-01",
-                    "description": "Développement Android en Java/XML avec les outils Android Studio et Visual Studio Code. Hébergement de notre base de données sous Firebase.",
+                    "description": "Conception d'une application qui permet de signaler et nettoyer les déchetteries sauvages dans la périphérie rennaise.",
+                    "tasks": [
+                        "Développement d'une application mobile Android (Java, XML)",
+                        "Utilisation de la géolocalisation pour signaler les dépôts sauvages",
+                        "Utilisation de la caméra pour prendre des photos des dépôts",
+                        "Utilisation de la carte pour visualiser les dépôts",
+                        "Hébergement de la base de données sous Firebase",
+                        "Réalisation de démonstrations"
+                    ],
                     "skills": [
                         "Java",
                         "XML",
