@@ -62,11 +62,11 @@ De plus, avec cet affichage, un tableau des 5 meilleurs jeunes joueurs pour chaq
 
 Voici une des visualisations obtenues des meilleurs jeunes joueurs de Premier League :
 
-![](./assets/lineups_under_23_PremierLeague.png)
+![Meilleurs jeunes joueurs de Premier League](assets/lineups_under_23_PremierLeague.png?size=400x)
 
 Et le classement associé pour chaque poste avec l'affichage de tous les scores des statistiques ainsi que le score total :
 
-![](./assets/ranking_under_23_PremierLeague.png)
+![Meilleurs jeunes joueurs de Premier League](assets/ranking_under_23_PremierLeague.png?size=800x)
 
 ## Limites du projet
 

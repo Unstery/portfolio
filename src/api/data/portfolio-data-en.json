@@ -96,10 +96,11 @@
                     "description": "Frontend web application in Flutter/Dart, API in Node.js with the NestJS framework and database hosted in MongoDB.",
                     "image": "wijin.jpg",
                     "skills": [
+                        "Dart",
+                        "Flutter",
                         "TypeScript",
                         "Node.js",
                         "NestJS",
-                        "Dart",
                         "MongoDB"
                     ],
                     "project": "Web application for managing training schedules",
@@ -135,7 +136,9 @@
                         "Language Server Protocol (LSP)",
                         "Arduino"
                     ],
-                    "content": "robot-dsl-project.md"
+                    "contents": [
+                        "robot-dsl"
+                    ]
                 },
                 {
                     "id": "9",
@@ -151,7 +154,9 @@
                         "Vue.js",
                         "Docker"
                     ],
-                    "content": "lwm2m-project.md"
+                    "contents": [
+                        "lwm2m-project"
+                    ]
                 },
                 {
                     "id": "8",
@@ -165,7 +170,9 @@
                         "Spring Remoting",
                         "Java RMI"
                     ],
-                    "content": "sr-project.md"
+                    "contents": [
+                        "sr-project"
+                    ]
                 },
                 {
                     "id": "7",
@@ -181,26 +188,9 @@
                         "Pandas",
                         "Numpy"
                     ],
-                    "content": "image-captioning-project.md"
-                },
-                {
-                    "id": "6",
-                    "title": "React web solution for white-label order management",
-                    "startDate": "2023-01-01",
-                    "endDate": "2023-01-01",
-                    "description": "Front-end web application in React with the Next.js framework. Interaction with the backend developed in .NET.",
-                    "skills": [
-                        "TypeScript",
-                        "React",
-                        "Next.js",
-                        "Styled-components",
-                        "I18n",
-                        "React Hooks",
-                        "React Query",
-                        "ESLint",
-                        "React Hook Form"
-                    ],
-                    "content": null
+                    "contents": [
+                        "image-captioning-project"
+                    ]
                 },
                 {
                     "id": "5",
@@ -215,7 +205,9 @@
                         "Pandas",
                         "Numpy"
                     ],
-                    "content": "foot-talent-tracker-project.md"
+                    "contents": [
+                        "foot-talent-tracker"
+                    ]
                 },
                 {
                     "id": "4",
@@ -227,7 +219,9 @@
                         "Flutter",
                         "Dart"
                     ],
-                    "content": "prog-mobile-project.md"
+                    "contents": [
+                        "prog-mobile-project"
+                    ]
                 },
                 {
                     "id": "3",
@@ -243,7 +237,11 @@
                         "RabbitMQ",
                         "Nginx"
                     ],
-                    "content": null
+                    "contents": [
+                        "architecture-administration",
+                        "administrationfront",
+                        "projwebassociation"
+                    ]
                 },
                 {
                     "id": "2",
@@ -256,22 +254,9 @@
                         "Java",
                         "C++"
                     ],
-                    "content": null
-                },
-                {
-                    "id": "1",
-                    "title": "Flutter web application for managing training schedules",
-                    "startDate": "2022-01-01",
-                    "endDate": "2022-01-01",
-                    "description": "Frontend web application in Flutter/Dart, API in Node.js with the NestJS framework and database hosted in MongoDB.",
-                    "skills": [
-                        "Flutter",
-                        "Dart",
-                        "Node.js",
-                        "NestJS",
-                        "MongoDB"
-                    ],
-                    "content": null
+                    "contents": [
+                        "while_compiler"
+                    ]
                 },
                 {
                     "id": "0",
@@ -284,7 +269,9 @@
                         "XML",
                         "Firebase"
                     ],
-                    "content": "tipe-project.md"
+                    "contents": [
+                        "tipe"
+                    ]
                 }
             ]
         },
