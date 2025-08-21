@@ -6,5 +6,5 @@ export interface ProjectEntity {
   description: string,
   images?: string[],
   skills: string[],
-  content: string
+  contents: string[]
 }

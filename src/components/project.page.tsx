@@ -37,7 +37,11 @@ export const ProjectPage = ({ projectId }: ProjectPageProps) => {
         <SkillsList skills={project.skills} />
       </div>
       <p className="text-justify">{project.description}</p>
-      {project.content && <MarkdownRenderer content={project.content} />}
+      <div className="space-y-5">
+        {project.contents.map((content, index) => (
+          <MarkdownRenderer key={index} content={content} />
+        ))}
+      </div>
     </div>
   );
 };
