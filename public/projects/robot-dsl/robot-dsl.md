@@ -4,13 +4,13 @@ This repository creates a domain-specific language (DSL) to define the behaviour
 
 Here is an example of a simulation of a program in our robot-dsl language :
 
-![](./assets/robotdsl_simulation_star.gif)
+![](assets/robotdsl_simulation_star.gif?size=900x)
 
 ## Domain modeling with Ecore
 
 To define the language, we created an Ecore metamodel. Here is our domain model :
 
-![](./assets/robotdsl_ecore_model.png)
+![](assets/robotdsl_ecore_model.png?size=900x)
 
 Our DSL Robot allows you to control the robot by moving it in 4 directions: `Forward`, `Backward`, `Left` and `Right` and by rotating it with `Rotate`. Control structures are also available with `loop` for creating while loops and `if` for creating conditions. In addition, `let` functions (with the possibility of having parameters and a return type) and `var` variables can be created. Our language also supports arithmetic and boolean expressions. Finally, the user of our language can interact with certain data from the robot's sensors, such as speed (`getSpeed()` and `setSpeed()`), distance (`getDistance()`) and time (`getTime()`).
 The types taken into account are `number` and `boolean` and the units are `mm`, `cm` and `m`.
