@@ -203,7 +203,13 @@
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
                     "description": "Entrainement d'un modèle sur un ensemble de données, développé en Python avec les bibliothèques d'apprentissage machine TensorFlow et PyTorch et affiné (fine-tuned) avec un modèle de transformateurs pré-entraînés de la bibliothèque Hugging Face Transformers.",
-                    "tasks": [],
+                    "tasks": [
+                        "Extraction de caractéristiques d'images à l'aide de modèles pré-entraînés (VGG16)",
+                        "Prétraitement des données texte et images : nettoyage, tokenisation, structuration des jeux d'entraînement/test",
+                        "Conception d'un modèle encodeur-décodeur en TensorFlow/Keras pour la génération de légendes",
+                        "Évaluation des performances",
+                        "Expérimentation avec des modèles Transformers pré-entraînés (Hugging Face)"
+                    ],
                     "skills": [
                         "Python",
                         "TensorFlow",
@@ -335,6 +341,25 @@
                     ],
                     "contents": [
                         "tipe"
+                    ]
+                },
+                {
+                    "id": "0111",
+                    "title": "Tower Defense",
+                    "startDate": "2021-01-01",
+                    "endDate": "2021-01-01",
+                    "description": "Développement d'un jeu de Tower Defense en Java, où le joueur doit défendre un château contre différentes vagues de monstres (terrestres, volants et golems). Trois plateaux générés aléatoirement offrent des parcours variés. Le joueur peut placer, améliorer et gérer différentes tours (archers, bombes, lasers) pour repousser les vagues successives.",
+                    "tasks": [
+                        "Conception et implémentation de la logique du jeu",
+                        "Création des classes de monstres et tours",
+                        "Implémentation des contrôles joueurs",
+                        "Gestion de l'affichage graphique"
+                    ],
+                    "skills": [
+                        "Java"
+                    ],
+                    "contents": [
+                        "tower-defense"
                     ]
                 }
             ]

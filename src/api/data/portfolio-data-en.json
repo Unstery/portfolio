@@ -203,7 +203,13 @@
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
                     "description": "Training of a model on a data set, developed in Python with the TensorFlow and PyTorch machine learning libraries and fine-tuned with a model of pre-trained transformers from the Hugging Face Transformers library.",
-                    "tasks": [],
+                    "tasks": [
+                        "Extracting image features using pre-trained models (VGG16)",
+                        "Pre-processing text and image data: cleaning, tokenisation, structuring training/test sets",
+                        "Designing an encoder-decoder model in TensorFlow/Keras for caption generation",
+                        "Performance evaluation",
+                        "Experimentation with pre-trained Transformer models (Hugging Face)"
+                    ],
                     "skills": [
                         "Python",
                         "TensorFlow",
@@ -335,6 +341,25 @@
                     ],
                     "contents": [
                         "tipe"
+                    ]
+                },
+                {
+                    "id": "0111",
+                    "title": "Tower Defense",
+                    "startDate": "2021-01-01",
+                    "endDate": "2021-01-01",
+                    "description": "Development of a Tower Defence game in Java, where the player must defend a castle against different waves of monsters (land, flying and golems). Three randomly generated boards offer varied routes. The player can place, upgrade and manage different towers (archers, bombs, lasers) to repel successive waves.",
+                    "tasks": [
+                        "Design and implementation of game logic",
+                        "Creation of monster and tower classes",
+                        "Implementation of player controls",
+                        "Graphics display management"
+                    ],
+                    "skills": [
+                        "Java"
+                    ],
+                    "contents": [
+                        "tower-defense"
                     ]
                 }
             ]
