@@ -1,9 +1,9 @@
 {
-    "id": "0",
+    "id": "ba97b734-3361-4ed6-8af8-6fc0b13c3f5c",
     "title": "Portfolio",
     "categories": [
         {
-            "id": "0",
+            "id": "c80dae8e-e21c-41ee-ac1e-7c84216046be",
             "type": "Profile",
             "title": "Profil",
             "firstName": "Bastien",
@@ -18,12 +18,12 @@
             "description": "Bonjour, je suis Bastien Faisant, ingénieur en informatique diplômé de l'École Supérieure d'Ingénieurs de Rennes (ESIR).\nPassionné par le développement web et logiciel, je me spécialise dans les technologies Full Stack, avec une expertise en Java et JavaScript. Curieux et rigoureux, je suis toujours prêt à relever de nouveaux défis et à m'adapter rapidement à différents environnements de travail.\nMon dynamisme, ma capacité d'adaptation, et mon sens de l'organisation me permettent de m'intégrer efficacement au sein d'équipes innovantes pour développer des solutions performantes et pérennes."
         },
         {
-            "id": "1",
+            "id": "9a0f6859-8c34-471f-acb5-03cf418156aa",
             "type": "Experience",
             "title": "Expérience",
             "entities": [
                 {
-                    "id": "2",
+                    "id": "b04254a1-1875-4ef8-8ea0-ce8c2d6b31a3",
                     "title": "Développeur web Full Stack",
                     "company": "ASI",
                     "location": "Cesson-Sévigné, Bretagne, France",
@@ -54,7 +54,7 @@
                     ]
                 },
                 {
-                    "id": "1",
+                    "id": "300051b6-3993-438b-a077-00bb4d905e58",
                     "title": "Développeur web Frontend",
                     "company": "FLYX Cloud",
                     "location": "Auderghem, Bruxelles-Capitale, Belgique",
@@ -86,7 +86,7 @@
                     ]
                 },
                 {
-                    "id": "0",
+                    "id": "b53c0d71-ee82-4cd8-a2e9-0655e6c574b8",
                     "title": "Développeur web Full Stack",
                     "company": "Wijin",
                     "location": "Cesson-Sévigné, Bretagne, France",
@@ -117,16 +117,50 @@
             ]
         },
         {
-            "id": "2",
+            "id": "49553274-d27b-4751-89c7-76dd170692bd",
             "type": "Project",
             "title": "Projets",
             "entities": [
                 {
-                    "id": "10",
-                    "title": "Création d'un langage dédié (Domain-specific language) pour définir le comportement d'un robot",
+                    "id": "238a8331-9d0c-43e6-ac19-f498be550020",
+                    "title": "Portfolio",
+                    "startDate": "2025-01-01",
+                    "endDate": "2025-01-01",
+                    "description": "Application web portfolio pour présenter mon parcours, mes projets et mes expériences professionnelles. Le projet intègre également une pipeline CI/CD avec GitHub Actions pour automatiser la construction et le déploiement. Le site est ensuite hébergé sur Vercel, une plateforme d'hébergement moderne optimisée pour les frameworks frontend.",
+                    "tasks": [
+                        "Création d'un site web statique avec Astro et intégration de composants React",
+                        "Mise en place d'un design responsive avec Tailwindcss",
+                        "Utilisation de React Query pour la gestion des données",
+                        "Support multilingue (français et anglais) avec i18n",
+                        "Configuration de GitHub Actions pour l'intégration et le déploiement continus",
+                        "Hébergement sur Vercel"
+                    ],
+                    "skills": [
+                        "Astro",
+                        "React",
+                        "TypeScript",
+                        "Tailwindcss",
+                        "i18n",
+                        "React Query",
+                        "GitHub Actions",
+                        "Vercel"
+                    ],
+                    "contents": [
+                        "portfolio"
+                    ]
+                },
+                {
+                    "id": "28afc46a-56b9-4826-961a-df73b3165591",
+                    "title": "Langage dédié (DSL) pour définir le comportement d'un robot",
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
-                    "description": "Modélisation et implémentation du domaine avec Ecore. Création de la grammaire avec Langium (en TypeScript). Développement d'un interpréteur pour simulateur Web et d'un compilateur en code Arduino.",
+                    "description": "Création d'un langage dédié (Domain-specific language) pour définir le comportement d'un robot via la création d'un compilateur pour interagir avec le robot et d'un interpréteur pour le simuler.",
+                    "tasks": [
+                        "Modélisation et implémentation du domaine avec Ecore",
+                        "Création de la grammaire avec Langium (TypeScript)",
+                        "Développement d'un interpréteur pour simulateur Web",
+                        "Développement d'un compilateur en code Arduino"
+                    ],
                     "skills": [
                         "Eclipse Modeling Framework",
                         "Ecore",
@@ -141,45 +175,69 @@
                     ]
                 },
                 {
-                    "id": "9",
+                    "id": "0909622f-3d3f-480e-8760-c33f547f4c63",
                     "title": "Architecture en micro-services Client-Serveur avec le protocole de communication  LwM2M",
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
-                    "description": "Analyse du protocole et Mise en place d'une implémentation Client-Serveur via l'utilisation de la bibliothèque Java Eclipse Leshan. Backend en Java Spring Boot et Interface web en Vue.js.",
+                    "description": "Projet industriel visant à étudier la faisabilité d'une architecture Open Source couvrant le protocole LwM2M et réalisation d'une maquette l'implémentant dans un système avec différents appareils connectés.",
+                    "tasks": [
+                        "Analyse des protocoles de communication IoT",
+                        "Etude de l'intégration du protocole LwM2M dans une architecture en microservices",
+                        "Description d'une architecture utilisant les technologies étudiées",
+                        "Implémentation d'un démonstrateur d'une architecture LwM2M dans un système avec appareils connectés"
+                    ],
                     "skills": [
                         "Java",
                         "Spring",
                         "Spring Boot",
                         "Eclipse Leshan",
                         "Vue.js",
-                        "Docker"
+                        "Docker",
+                        "LwM2M",
+                        "CoAP"
                     ],
                     "contents": [
                         "lwm2m-project"
                     ]
                 },
                 {
-                    "id": "8",
-                    "title": "Implémentation d'un jeu distribué sur modèle Client-Serveur en Java RMI",
+                    "id": "6b7682bd-46d5-454d-a3f5-7850836d942e",
+                    "title": "Jeu distribué sur modèle Client-Serveur",
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
-                    "description": "Serveur développé avec le framework Spring et la technologie Spring Remoting RMI.",
+                    "description": "Implémentation d'un jeu distribué sur modèle Client-Serveur en Java RMI permettant à plusieurs joueurs de s'affronter dans un environnement de jeu en temps réel.",
+                    "tasks": [
+                        "Conception de l'architecture du jeu",
+                        "Implémentation du serveur de jeu en Java RMI (Java, Spring Boot, Spring Remoting RMI)",
+                        "Développement des clients de jeu en Java RMI (Java, Spring Boot, Spring Remoting RMI)",
+                        "Gestion des interactions entre les joueurs"
+                    ],
                     "skills": [
                         "Java",
                         "Spring",
+                        "Spring Boot",
                         "Spring Remoting",
-                        "Java RMI"
+                        "Java RMI",
+                        "Maven",
+                        "JUnit"
                     ],
                     "contents": [
                         "sr-project"
                     ]
                 },
                 {
-                    "id": "7",
+                    "id": "1524b5c3-5ef7-4287-9656-fb15f994f2f4",
                     "title": "Génération de légendes pour des images de nourriture (Image Captioning)",
-                    "startDate": "2023-01-01",
-                    "endDate": "2023-01-01",
+                    "startDate": "2024-01-01",
+                    "endDate": "2024-01-01",
                     "description": "Entrainement d'un modèle sur un ensemble de données, développé en Python avec les bibliothèques d'apprentissage machine TensorFlow et PyTorch et affiné (fine-tuned) avec un modèle de transformateurs pré-entraînés de la bibliothèque Hugging Face Transformers.",
+                    "tasks": [
+                        "Extraction de caractéristiques d'images à l'aide de modèles pré-entraînés (VGG16)",
+                        "Prétraitement des données texte et images : nettoyage, tokenisation, structuration des jeux d'entraînement/test",
+                        "Conception d'un modèle encodeur-décodeur en TensorFlow/Keras pour la génération de légendes",
+                        "Évaluation des performances",
+                        "Expérimentation avec des modèles Transformers pré-entraînés (Hugging Face)"
+                    ],
                     "skills": [
                         "Python",
                         "TensorFlow",
@@ -193,11 +251,17 @@
                     ]
                 },
                 {
-                    "id": "5",
+                    "id": "907618df-2c8b-4d35-8eab-2abcdbf3ea1e",
                     "title": "Évaluation des jeunes joueurs de football en data engineering",
-                    "startDate": "2022-01-01",
+                    "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
-                    "description": "Récupération des données via web scraping (BeautifulSoup et Selenium WebDriver) et Pandas et Numpy pour le traitement.",
+                    "description": "Analyse des données de scouting pour les joueurs de football en Europe. L'objectif est de repérer les futures pépites des 7 plus grands championnats européens en se concentrant sur les joueurs de moins de 23 ans.",
+                    "tasks": [
+                        "Récupération des données de joueurs de football via web scraping (BeautifulSoup et Selenium WebDriver)",
+                        "Traitement des données avec Pandas et Numpy",
+                        "Analyse des performances des joueurs",
+                        "Visualisation des données"
+                    ],
                     "skills": [
                         "Python",
                         "BeautifulSoup",
@@ -210,11 +274,19 @@
                     ]
                 },
                 {
-                    "id": "4",
+                    "id": "5ee722da-7c2a-4c70-bc58-7f022e6816c6",
                     "title": "Application de jeux mobile en pair-à-pair",
-                    "startDate": "2022-01-01",
+                    "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
-                    "description": "Application Flutter pour des défis solo et multijoueur en Wi-Fi Peer-to-Peer.",
+                    "description": "Application de jeux en pair-à-pair. Cette application propose 6 défis à relever seul ou à plusieurs grâce à la technologie Wi-Fi Peer-to-Peer.",
+                    "tasks": [
+                        "Conception de l'architecture de l'application (Flutter, Dart)",
+                        "Développement d'une connexion avec la technologie WiFi Peer-to-Peer (Flutter)",
+                        "Conception d'un mode compétition pour jouer en mode solo ou multijoueur. Le mode multijoueur permet de jouer avec des joueurs proches à l'aide du WiFi direct.",
+                        "Conception d'un mode entraînement pour jouer aux défis à volonté",
+                        "Sauvegarde des scores",
+                        "Réalisation de démonstrations"
+                    ],
                     "skills": [
                         "Flutter",
                         "Dart"
@@ -224,18 +296,29 @@
                     ]
                 },
                 {
-                    "id": "3",
-                    "title": "Microservices dockerisés d'un gestionnaire d'association",
-                    "startDate": "2022-01-01",
+                    "id": "354f12b9-6b5e-4995-b22a-92e74a1a98c8",
+                    "title": "Architecture en microservices d'un gestionnaire d'association",
+                    "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
-                    "description": "Architecture utilisant NestJS, MySQL, Angular, Quarkus, RabbitMQ et Nginx.",
+                    "description": "Application web permettant d'accéder à un système de gestion administratif d'associations et d'envoyer des mails aux membres des associations.",
+                    "tasks": [
+                        "Conception de l'architecture de la solution",
+                        "Conception d'un client frontend (Angular)",
+                        "Conception d'un serveur API (NestJS) communiquant avec la base de données",
+                        "Conception d'un microservice de notification (Quarkus)",
+                        "Envoi de message AMQP à la queue du MOM (MessageOriented Middleware) RabbitMQ",
+                        "Mise en place d'un serveur web frontend Nginx"
+                    ],
                     "skills": [
+                        "TypeScript",
+                        "Node.js",
                         "NestJS",
-                        "MySQL",
                         "Angular",
+                        "MySQL",
                         "Quarkus",
                         "RabbitMQ",
-                        "Nginx"
+                        "Nginx",
+                        "Docker"
                     ],
                     "contents": [
                         "architecture-administration",
@@ -244,11 +327,18 @@
                     ]
                 },
                 {
-                    "id": "2",
+                    "id": "d4b4e955-7a80-43ec-a685-0c6175473865",
                     "title": "Compilateur pour un nouveau langage de programmation While en C++",
-                    "startDate": "2022-01-01",
+                    "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
-                    "description": "Compilateur utilisant ANTLR et Java pour créer un lexer et un parser de grammaire, un code 3 adresses et une bibliothèque d'exécution pour C++.",
+                    "description": "Conception et implémentation d'un compilateur pour un nouveau langage de programmation While, avec génération de code intermédiaire en 3 adresses et implémentation d'une bibliothèque d'exécution en C++.",
+                    "tasks": [
+                        "Conception de la grammaire du langage While",
+                        "Création du lexer et du parser avec ANTLR",
+                        "Génération du code intermédiaire en 3 adresses",
+                        "Implémentation de la bibliothèque d'exécution pour C++",
+                        "Tests unitaires et validation du compilateur"
+                    ],
                     "skills": [
                         "ANTLR",
                         "Java",
@@ -259,11 +349,19 @@
                     ]
                 },
                 {
-                    "id": "0",
+                    "id": "e9640882-6308-47c2-a160-4308b7c22f87",
                     "title": "Application mobile de signalisation et de nettoyage de dépôts sauvages",
                     "startDate": "2021-01-01",
                     "endDate": "2021-01-01",
-                    "description": "Développement Android en Java/XML avec les outils Android Studio et Visual Studio Code. Hébergement de notre base de données sous Firebase.",
+                    "description": "Conception d'une application qui permet de signaler et nettoyer les déchetteries sauvages dans la périphérie rennaise.",
+                    "tasks": [
+                        "Développement d'une application mobile Android (Java, XML)",
+                        "Utilisation de la géolocalisation pour signaler les dépôts sauvages",
+                        "Utilisation de la caméra pour prendre des photos des dépôts",
+                        "Utilisation de la carte pour visualiser les dépôts",
+                        "Hébergement de la base de données sous Firebase",
+                        "Réalisation de démonstrations"
+                    ],
                     "skills": [
                         "Java",
                         "XML",
@@ -272,16 +370,35 @@
                     "contents": [
                         "tipe"
                     ]
+                },
+                {
+                    "id": "2b838965-b6dd-46ea-a244-63c5a4ccc8c3",
+                    "title": "Tower Defense",
+                    "startDate": "2021-01-01",
+                    "endDate": "2021-01-01",
+                    "description": "Développement d'un jeu de Tower Defense en Java, où le joueur doit défendre un château contre différentes vagues de monstres (terrestres, volants et golems). Trois plateaux générés aléatoirement offrent des parcours variés. Le joueur peut placer, améliorer et gérer différentes tours (archers, bombes, lasers) pour repousser les vagues successives.",
+                    "tasks": [
+                        "Conception et implémentation de la logique du jeu",
+                        "Création des classes de monstres et tours",
+                        "Implémentation des contrôles joueurs",
+                        "Gestion de l'affichage graphique"
+                    ],
+                    "skills": [
+                        "Java"
+                    ],
+                    "contents": [
+                        "tower-defense"
+                    ]
                 }
             ]
         },
         {
-            "id": "3",
+            "id": "2b7ad68c-7a53-4287-bff1-d4ccb1a4c743",
             "type": "Education",
             "title": "Formation",
             "entities": [
                 {
-                    "id": "2",
+                    "id": "ca21f2ec-3ec5-4a5f-b532-f448b1b2be6e",
                     "school": "École Supérieure d'Ingénieurs de Rennes (ESIR)",
                     "degree": "Diplôme d'ingénieur de l'ESIR",
                     "speciality": "Informatique",
@@ -290,7 +407,7 @@
                     "image": "esir.png"
                 },
                 {
-                    "id": "1",
+                    "id": "45a9c366-e465-435c-a492-647f8c612832",
                     "school": "École Supérieure d'Ingénieurs de Rennes (ESIR)",
                     "degree": "Cycle Universitaire Préparatoire aux Grandes Écoles (CUPGE)",
                     "speciality": "Technologie de l'information",
@@ -299,7 +416,7 @@
                     "image": "esir.png"
                 },
                 {
-                    "id": "0",
+                    "id": "336263e9-3bce-4e7f-b309-a43f791365c7",
                     "school": "Lycée Jean Guéhenno, Fougères",
                     "degree": "Baccalauréat Scientifique (BAS S)",
                     "speciality": "Sciences de l'ingénieur",

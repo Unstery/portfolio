@@ -4,9 +4,18 @@ Ce projet à pour objectif d'étudier la faisabilité d'une architecture open so
 
 ## Structure du projet
 
+Le développement de la maquette pour la gestion des clients IoT repose sur la mise en place d’une architecture en micro-services, déployant un serveur Leshan LwM2M, les clients LwM2M et une interface de gestion des clients depuis le serveur.
+
+![](assets/deployment_diagram.svg?size=x500)
+
+Cette architecture est une solution pour la gestion des appareils IoT via le protocole LwM2M.
+
+Les dispositifs IoT sont équipés de microcontrôleurs avec le firmware Zephyr comme système d’exploitation. L’implémentation du client LwM2M est, donc, assurée par Zephyr LwM2M en C, spécifiquement optimisée pour les environnements embarqués. Le serveur repose sur Eclipse Leshan, fournissant à la fois un serveur LwM2M et un serveur Bootstrap LwM2M pour faciliter la gestion des configurations initiales des dispositifs IoT. De plus, une API pour l’administration des dispositifs est implémentée en Java Spring Boot. Ensuite, une interface pour la gestion du serveur est mis en place en JavaScript avec Vue.js. Pour organiser les données récupérées dans le temps, une base de données de séries chronologiques (Time series database) peut être envisagée, avec des options telles qu’InfluxDB, MongoDB ou TimescaleDB.
+
+Pour une gestion simplifiée, le serveur, le backend et le frontend sont conteneurisés via Docker. Les clients LwM2M, quant à eux, ne nécessitent pas d’être conteneurisés. Cette décision s'explique par le fait que les dispositifs IoT sont des appareils à ressources limitées et la conteneurisation peut introduire une surcharge inutile. L’interaction avec les micro-services est réalisée via l’API RESTful alors que la communication entre les objets IoT et les serveurs se fait avec le protocole LwM2M.
+
 ### Création d'un object IPSO
 
-Le développement de la maquette pour la gestion des clients IoT repose sur la mise en place d’une architecture en micro-services, déployant un serveur Leshan LwM2M, les clients LwM2M et une interface de gestion des clients depuis le serveur.
 Un des objectifs de notre expérimentation était d’établir une communication entre les 2 clients. Pour cela, nous avons défini un objet selon le modèle de données IPSO. Un objet IPSO est un ensemble de spécifications standardisées facilitant l’interopérabilité entre les objets connectés et l’Internet des Objets. Dans notre cas, notre objet de test comporte 2 ressources : “Tx” (pour la transmission de données) et “Rx” (pour la récupération de données). Ces ressources supportent les opérations de lecture et d’écriture.
 La démonstration du serveur met en avant sa capacité à gérer plusieurs clients et à coordonner les interactions entre eux. La structure présentant le processus de communication de notre démonstration est la suivante :
 

@@ -1,9 +1,9 @@
 {
-    "id": "0",
+    "id": "ba97b734-3361-4ed6-8af8-6fc0b13c3f5c",
     "title": "Portfolio",
     "categories": [
         {
-            "id": "0",
+            "id": "c80dae8e-e21c-41ee-ac1e-7c84216046be",
             "type": "Profile",
             "title": "Profile",
             "firstName": "Bastien",
@@ -18,12 +18,12 @@
             "description": "Computer engineer graduated from ESIR, in Rennes, I am looking for a permanent contract as a Full Stack developer from September 2024. Passionate about web and software development, I am ready to bring my skills and my dynamism to a innovative team."
         },
         {
-            "id": "1",
+            "id": "9a0f6859-8c34-471f-acb5-03cf418156aa",
             "type": "Experience",
             "title": "Experience",
             "entities": [
                 {
-                    "id": "2",
+                    "id": "b04254a1-1875-4ef8-8ea0-ce8c2d6b31a3",
                     "title": "Full Stack Web developer",
                     "company": "ASI",
                     "location": "Cesson-Sévigné, Brittany, France",
@@ -54,7 +54,7 @@
                     ]
                 },
                 {
-                    "id": "1",
+                    "id": "300051b6-3993-438b-a077-00bb4d905e58",
                     "title": "Frontend Web developer",
                     "company": "FLYX Cloud",
                     "location": "Oudergem, Brussels Region, Belgium",
@@ -86,7 +86,7 @@
                     ]
                 },
                 {
-                    "id": "0",
+                    "id": "b53c0d71-ee82-4cd8-a2e9-0655e6c574b8",
                     "title": "Full Stack Web developer",
                     "company": "Wijin",
                     "location": "Cesson-Sévigné, Brittany, France",
@@ -117,16 +117,50 @@
             ]
         },
         {
-            "id": "2",
+            "id": "49553274-d27b-4751-89c7-76dd170692bd",
             "type": "Project",
             "title": "Projects",
             "entities": [
                 {
-                    "id": "10",
-                    "title": "Creation of a domain-specific language to define robot behaviour",
+                    "id": "238a8331-9d0c-43e6-ac19-f498be550020",
+                    "title": "Portfolio",
+                    "startDate": "2025-01-01",
+                    "endDate": "2025-01-01",
+                    "description": "Web application portfolio to showcase my career path, projects, and professional experience. The project also includes a CI/CD pipeline with GitHub Actions to automate build and deployment. The site is then hosted on Vercel, a modern hosting platform optimised for frontend frameworks.",
+                    "tasks": [
+                        "Creation of a static website with Astro and integration of React components",
+                        "Implementation of a responsive design with Tailwindcss",
+                        "Use of React Query for data management",
+                        "Multilingual support (French and English) with i18n",
+                        "Configuration of GitHub Actions for continuous integration and deployment",
+                        "Hosting on Vercel"
+                    ],
+                    "skills": [
+                        "Astro",
+                        "React",
+                        "TypeScript",
+                        "Tailwindcss",
+                        "i18n",
+                        "React Query",
+                        "GitHub Actions",
+                        "Vercel"
+                    ],
+                    "contents": [
+                        "portfolio"
+                    ]
+                },
+                {
+                    "id": "28afc46a-56b9-4826-961a-df73b3165591",
+                    "title": "Domain-specific language for defining robot behaviour",
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
-                    "description": "Modelling and implementation of the domain with Ecore. Creation of the grammar with Langium (in TypeScript). Development of an interpreter for a Web simulator and a compiler for Arduino code.",
+                    "description": "Creation of a domain-specific language to define the behaviour of a robot via the creation of a compiler to interact with the robot and an interpreter to simulate it.",
+                    "tasks": [
+                        "Modelling and implementing the domain with Ecore",
+                        "Creating grammar with Langium (TypeScript)",
+                        "Developing an interpreter for a web simulator",
+                        "Developing a compiler in Arduino code"
+                    ],
                     "skills": [
                         "Eclipse Modeling Framework",
                         "Ecore",
@@ -141,45 +175,69 @@
                     ]
                 },
                 {
-                    "id": "9",
+                    "id": "0909622f-3d3f-480e-8760-c33f547f4c63",
                     "title": "Client-Server micro-services architecture with the LwM2M communication protocol",
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
-                    "description": "Analysis of the protocol and creation of a Client-Server implementation using the Eclipse Leshan Java library. Backend in Java Spring Boot and web interface in Vue.js.",
+                    "description": "Industrial project aimed at studying the feasibility of an open source architecture covering the LwM2M protocol and creating a model implementing it in a system with various connected devices.",
+                    "tasks": [
+                        "Analysis of IoT communication protocols",
+                        "Study of the integration of the LwM2M protocol into a microservices architecture",
+                        "Description of an architecture using the technologies studied",
+                        "Implementation of a demonstrator of an LwM2M architecture in a system with connected devices"
+                    ],
                     "skills": [
                         "Java",
                         "Spring",
                         "Spring Boot",
                         "Eclipse Leshan",
                         "Vue.js",
-                        "Docker"
+                        "Docker",
+                        "LwM2M",
+                        "CoAP"
                     ],
                     "contents": [
                         "lwm2m-project"
                     ]
                 },
                 {
-                    "id": "8",
-                    "title": "Implementation of a distributed game on a Client-Server model in Java RMI",
+                    "id": "6b7682bd-46d5-454d-a3f5-7850836d942e",
+                    "title": "Distributed game on a Client-Server model",
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
-                    "description": "Server developed using the Spring framework and Spring Remoting RMI technology.",
+                    "description": "Implementation of a distributed game based on a client-server model in Java RMI, allowing multiple players to compete in a real-time gaming environment.",
+                    "tasks": [
+                        "Game architecture design",
+                        "Game server implementation in Java RMI (Java, Spring Boot, Spring Remoting RMI)",
+                        "Game client development in Java RMI (Java, Spring Boot, Spring Remoting RMI)",
+                        "Management of player interactions"
+                    ],
                     "skills": [
                         "Java",
                         "Spring",
+                        "Spring Boot",
                         "Spring Remoting",
-                        "Java RMI"
+                        "Java RMI",
+                        "Maven",
+                        "JUnit"
                     ],
                     "contents": [
                         "sr-project"
                     ]
                 },
                 {
-                    "id": "7",
+                    "id": "1524b5c3-5ef7-4287-9656-fb15f994f2f4",
                     "title": "Generating captions for food images (Image Captioning)",
-                    "startDate": "2023-01-01",
-                    "endDate": "2023-01-01",
+                    "startDate": "2024-01-01",
+                    "endDate": "2024-01-01",
                     "description": "Training of a model on a data set, developed in Python with the TensorFlow and PyTorch machine learning libraries and fine-tuned with a model of pre-trained transformers from the Hugging Face Transformers library.",
+                    "tasks": [
+                        "Extracting image features using pre-trained models (VGG16)",
+                        "Pre-processing text and image data: cleaning, tokenisation, structuring training/test sets",
+                        "Designing an encoder-decoder model in TensorFlow/Keras for caption generation",
+                        "Performance evaluation",
+                        "Experimentation with pre-trained Transformer models (Hugging Face)"
+                    ],
                     "skills": [
                         "Python",
                         "TensorFlow",
@@ -193,11 +251,17 @@
                     ]
                 },
                 {
-                    "id": "5",
+                    "id": "907618df-2c8b-4d35-8eab-2abcdbf3ea1e",
                     "title": "Evaluation of young football players in data engineering",
-                    "startDate": "2022-01-01",
+                    "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
-                    "description": "Data retrieval via web scraping (BeautifulSoup and Selenium WebDriver) and Pandas and Numpy for processing.",
+                    "description": "Analysis of scouting data for football players in Europe. The aim is to identify future stars in the seven biggest European leagues, focusing on players under the age of 23.",
+                    "tasks": [
+                        "Retrieving football player data via web scraping (BeautifulSoup and Selenium WebDriver)",
+                        "Data processing with Pandas and Numpy",
+                        "Player performance analysis",
+                        "Data visualisation"
+                    ],
                     "skills": [
                         "Python",
                         "BeautifulSoup",
@@ -210,11 +274,19 @@
                     ]
                 },
                 {
-                    "id": "4",
+                    "id": "5ee722da-7c2a-4c70-bc58-7f022e6816c6",
                     "title": "Peer-to-peer mobile gaming application",
-                    "startDate": "2022-01-01",
+                    "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
-                    "description": "Flutter application for single and multiplayer challenges over Wi-Fi P2P.",
+                    "description": "Peer-to-peer gaming app. This app offers six challenges to be completed alone or with others using Wi-Fi peer-to-peer technology.",
+                    "tasks": [
+                        "Designing the application architecture (Flutter, Dart)",
+                        "Developing a connection using Peer-to-Peer WiFi technology (Flutter)",
+                        "Designing a competition mode for single-player or multiplayer gameplay. Multiplayer mode allows you to play with nearby players using direct WiFi.",
+                        "Design of a training mode for playing challenges at will",
+                        "Saving scores",
+                        "Conducting demonstrations"
+                    ],
                     "skills": [
                         "Flutter",
                         "Dart"
@@ -224,18 +296,29 @@
                     ]
                 },
                 {
-                    "id": "3",
-                    "title": "Dockerized microservices of an association manager",
-                    "startDate": "2022-01-01",
+                    "id": "354f12b9-6b5e-4995-b22a-92e74a1a98c8",
+                    "title": "Microservices architecture of an association manager",
+                    "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
-                    "description": "Architecture using NestJS, MySQL, Angular, Quarkus, RabbitMQ and Nginx.",
+                    "description": "Web application providing access to an administrative management system for associations and enabling emails to be sent to association members.",
+                    "tasks": [
+                        "Designing the solution architecture",
+                        "Developing the front-end client (Angular)",
+                        "Developing an API server (NestJS) that communicates with the database",
+                        "Developing a notification microservice (Quarkus)",
+                        "Sending AMQP messages to the RabbitMQ MOM (MessageOriented Middleware) queue",
+                        "Setting up an Nginx frontend web server"
+                    ],
                     "skills": [
+                        "TypeScript",
+                        "Node.js",
                         "NestJS",
-                        "MySQL",
                         "Angular",
+                        "MySQL",
                         "Quarkus",
                         "RabbitMQ",
-                        "Nginx"
+                        "Nginx",
+                        "Docker"
                     ],
                     "contents": [
                         "architecture-administration",
@@ -244,11 +327,18 @@
                     ]
                 },
                 {
-                    "id": "2",
-                    "title": "Development of a compiler for new programming language While in C++",
-                    "startDate": "2022-01-01",
+                    "id": "d4b4e955-7a80-43ec-a685-0c6175473865",
+                    "title": "Compiler for new programming language While in C++",
+                    "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
-                    "description": "Compiler using ANTLR and Java to create a grammar lexer and parser, three-address code and runtime library for C++.",
+                    "description": "Design and implementation of a compiler for a new programming language, While, with generation of intermediate code in 3 addresses and implementation of an execution library in C++.",
+                    "tasks": [
+                        "Designing the grammar of the While language",
+                        "Creating the lexer and parser with ANTLR",
+                        "Generating intermediate code in 3 addresses",
+                        "Implementing the runtime library for C++",
+                        "Unit testing and compiler validation"
+                    ],
                     "skills": [
                         "ANTLR",
                         "Java",
@@ -259,11 +349,19 @@
                     ]
                 },
                 {
-                    "id": "0",
+                    "id": "e9640882-6308-47c2-a160-4308b7c22f87",
                     "title": "Mobile application for signposting and cleaning up illegal dumping",
                     "startDate": "2021-01-01",
                     "endDate": "2021-01-01",
-                    "description": "Android development in Java/XML with Android Studio and Visual Studio Code tools. Hosting of our database in Firebase.",
+                    "description": "Design of an application that allows users to report and clean up illegal dumpsites in the outskirts of Rennes.",
+                    "tasks": [
+                        "Development of an Android mobile application (Java, XML)",
+                        "Use of geolocation to report illegal dumping",
+                        "Use of the camera to take photos of the dumping sites",
+                        "Use of the map to view the dumping sites",
+                        "Hosting of the database on Firebase",
+                        "Conducting demonstrations"
+                    ],
                     "skills": [
                         "Java",
                         "XML",
@@ -272,16 +370,35 @@
                     "contents": [
                         "tipe"
                     ]
+                },
+                {
+                    "id": "2b838965-b6dd-46ea-a244-63c5a4ccc8c3",
+                    "title": "Tower Defense",
+                    "startDate": "2021-01-01",
+                    "endDate": "2021-01-01",
+                    "description": "Development of a Tower Defence game in Java, where the player must defend a castle against different waves of monsters (land, flying and golems). Three randomly generated boards offer varied routes. The player can place, upgrade and manage different towers (archers, bombs, lasers) to repel successive waves.",
+                    "tasks": [
+                        "Design and implementation of game logic",
+                        "Creation of monster and tower classes",
+                        "Implementation of player controls",
+                        "Graphics display management"
+                    ],
+                    "skills": [
+                        "Java"
+                    ],
+                    "contents": [
+                        "tower-defense"
+                    ]
                 }
             ]
         },
         {
-            "id": "3",
+            "id": "2b7ad68c-7a53-4287-bff1-d4ccb1a4c743",
             "type": "Education",
             "title": "Education",
             "entities": [
                 {
-                    "id": "2",
+                    "id": "ca21f2ec-3ec5-4a5f-b532-f448b1b2be6e",
                     "school": "ESIR - Rennes Graduate School of Engineering",
                     "degree": "ESIR engineering degree",
                     "speciality": "Computer science",
@@ -290,7 +407,7 @@
                     "image": "esir.png"
                 },
                 {
-                    "id": "1",
+                    "id": "45a9c366-e465-435c-a492-647f8c612832",
                     "school": "ESIR - Rennes Graduate School of Engineering",
                     "degree": "Two-years of preparing university cycle (CUPGE)",
                     "speciality": "Information technology",
@@ -299,7 +416,7 @@
                     "image": "esir.png"
                 },
                 {
-                    "id": "0",
+                    "id": "336263e9-3bce-4e7f-b309-a43f791365c7",
                     "school": "Jean Guéhenno high school, Fougères",
                     "degree": "Bachelor's Degrees (BSC)",
                     "speciality": "Engineering Sciences",
