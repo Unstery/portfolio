@@ -1,9 +1,9 @@
 {
-    "id": "0",
+    "id": "ba97b734-3361-4ed6-8af8-6fc0b13c3f5c",
     "title": "Portfolio",
     "categories": [
         {
-            "id": "0",
+            "id": "c80dae8e-e21c-41ee-ac1e-7c84216046be",
             "type": "Profile",
             "title": "Profile",
             "firstName": "Bastien",
@@ -18,12 +18,12 @@
             "description": "Computer engineer graduated from ESIR, in Rennes, I am looking for a permanent contract as a Full Stack developer from September 2024. Passionate about web and software development, I am ready to bring my skills and my dynamism to a innovative team."
         },
         {
-            "id": "1",
+            "id": "9a0f6859-8c34-471f-acb5-03cf418156aa",
             "type": "Experience",
             "title": "Experience",
             "entities": [
                 {
-                    "id": "2",
+                    "id": "b04254a1-1875-4ef8-8ea0-ce8c2d6b31a3",
                     "title": "Full Stack Web developer",
                     "company": "ASI",
                     "location": "Cesson-Sévigné, Brittany, France",
@@ -54,7 +54,7 @@
                     ]
                 },
                 {
-                    "id": "1",
+                    "id": "300051b6-3993-438b-a077-00bb4d905e58",
                     "title": "Frontend Web developer",
                     "company": "FLYX Cloud",
                     "location": "Oudergem, Brussels Region, Belgium",
@@ -86,7 +86,7 @@
                     ]
                 },
                 {
-                    "id": "0",
+                    "id": "b53c0d71-ee82-4cd8-a2e9-0655e6c574b8",
                     "title": "Full Stack Web developer",
                     "company": "Wijin",
                     "location": "Cesson-Sévigné, Brittany, France",
@@ -117,12 +117,40 @@
             ]
         },
         {
-            "id": "2",
+            "id": "49553274-d27b-4751-89c7-76dd170692bd",
             "type": "Project",
             "title": "Projects",
             "entities": [
                 {
-                    "id": "10",
+                    "id": "238a8331-9d0c-43e6-ac19-f498be550020",
+                    "title": "Portfolio",
+                    "startDate": "2025-01-01",
+                    "endDate": "2025-01-01",
+                    "description": "Web application portfolio to showcase my career path, projects, and professional experience. The project also includes a CI/CD pipeline with GitHub Actions to automate build and deployment. The site is then hosted on Vercel, a modern hosting platform optimised for frontend frameworks.",
+                    "tasks": [
+                        "Creation of a static website with Astro and integration of React components",
+                        "Implementation of a responsive design with Tailwindcss",
+                        "Use of React Query for data management",
+                        "Multilingual support (French and English) with i18n",
+                        "Configuration of GitHub Actions for continuous integration and deployment",
+                        "Hosting on Vercel"
+                    ],
+                    "skills": [
+                        "Astro",
+                        "React",
+                        "TypeScript",
+                        "Tailwindcss",
+                        "i18n",
+                        "React Query",
+                        "GitHub Actions",
+                        "Vercel"
+                    ],
+                    "contents": [
+                        "portfolio"
+                    ]
+                },
+                {
+                    "id": "28afc46a-56b9-4826-961a-df73b3165591",
                     "title": "Domain-specific language for defining robot behaviour",
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
@@ -147,7 +175,7 @@
                     ]
                 },
                 {
-                    "id": "9",
+                    "id": "0909622f-3d3f-480e-8760-c33f547f4c63",
                     "title": "Client-Server micro-services architecture with the LwM2M communication protocol",
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
@@ -173,7 +201,7 @@
                     ]
                 },
                 {
-                    "id": "8",
+                    "id": "6b7682bd-46d5-454d-a3f5-7850836d942e",
                     "title": "Distributed game on a Client-Server model",
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
@@ -198,7 +226,7 @@
                     ]
                 },
                 {
-                    "id": "7",
+                    "id": "1524b5c3-5ef7-4287-9656-fb15f994f2f4",
                     "title": "Generating captions for food images (Image Captioning)",
                     "startDate": "2024-01-01",
                     "endDate": "2024-01-01",
@@ -223,7 +251,7 @@
                     ]
                 },
                 {
-                    "id": "5",
+                    "id": "907618df-2c8b-4d35-8eab-2abcdbf3ea1e",
                     "title": "Evaluation of young football players in data engineering",
                     "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
@@ -246,7 +274,7 @@
                     ]
                 },
                 {
-                    "id": "4",
+                    "id": "5ee722da-7c2a-4c70-bc58-7f022e6816c6",
                     "title": "Peer-to-peer mobile gaming application",
                     "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
@@ -268,7 +296,7 @@
                     ]
                 },
                 {
-                    "id": "3",
+                    "id": "354f12b9-6b5e-4995-b22a-92e74a1a98c8",
                     "title": "Microservices architecture of an association manager",
                     "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
@@ -299,7 +327,7 @@
                     ]
                 },
                 {
-                    "id": "2",
+                    "id": "d4b4e955-7a80-43ec-a685-0c6175473865",
                     "title": "Compiler for new programming language While in C++",
                     "startDate": "2023-01-01",
                     "endDate": "2023-01-01",
@@ -321,7 +349,7 @@
                     ]
                 },
                 {
-                    "id": "0",
+                    "id": "e9640882-6308-47c2-a160-4308b7c22f87",
                     "title": "Mobile application for signposting and cleaning up illegal dumping",
                     "startDate": "2021-01-01",
                     "endDate": "2021-01-01",
@@ -344,7 +372,7 @@
                     ]
                 },
                 {
-                    "id": "0111",
+                    "id": "2b838965-b6dd-46ea-a244-63c5a4ccc8c3",
                     "title": "Tower Defense",
                     "startDate": "2021-01-01",
                     "endDate": "2021-01-01",
@@ -365,12 +393,12 @@
             ]
         },
         {
-            "id": "3",
+            "id": "2b7ad68c-7a53-4287-bff1-d4ccb1a4c743",
             "type": "Education",
             "title": "Education",
             "entities": [
                 {
-                    "id": "2",
+                    "id": "ca21f2ec-3ec5-4a5f-b532-f448b1b2be6e",
                     "school": "ESIR - Rennes Graduate School of Engineering",
                     "degree": "ESIR engineering degree",
                     "speciality": "Computer science",
@@ -379,7 +407,7 @@
                     "image": "esir.png"
                 },
                 {
-                    "id": "1",
+                    "id": "45a9c366-e465-435c-a492-647f8c612832",
                     "school": "ESIR - Rennes Graduate School of Engineering",
                     "degree": "Two-years of preparing university cycle (CUPGE)",
                     "speciality": "Information technology",
@@ -388,7 +416,7 @@
                     "image": "esir.png"
                 },
                 {
-                    "id": "0",
+                    "id": "336263e9-3bce-4e7f-b309-a43f791365c7",
                     "school": "Jean Guéhenno high school, Fougères",
                     "degree": "Bachelor's Degrees (BSC)",
                     "speciality": "Engineering Sciences",
