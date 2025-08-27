@@ -20,7 +20,7 @@ export const ProjectItem = ({ entity }: ProjectItemProps) => {
         <h3 className="text-xl font-bold">{entity.title}</h3>
         <p>{dateRange}</p>
         <p>{entity.description}</p>
-        <SkillsList skills={entity.skills} />
+        <SkillsList skills={entity.skills} justify="start" />
       </div>
     </a>
   );

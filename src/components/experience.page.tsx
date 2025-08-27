@@ -27,7 +27,7 @@ export const ExperiencePage = ({ experienceId }: ExperiencePageProps) => {
   );
 
   return (
-    <div className="px-5 mx-auto max-w-screen-lg mb-5 flex flex-col gap-5">
+    <div className="px-4 mx-auto max-w-screen-lg mb-5 flex flex-col gap-5">
       <div className="flex flex-col sm:flex-row justify-evenly items-center">
         <div className="flex flex-row gap-2 items-center">
           <FontAwesomeIcon icon={faFileContract} className="w-4 h-4" />
@@ -50,9 +50,7 @@ export const ExperiencePage = ({ experienceId }: ExperiencePageProps) => {
         {experience.title}
       </h2>
       <h3 className="text-xl font-bold text-center">{experience.project}</h3>
-      <div className="flex justify-center">
-        <SkillsList skills={experience.skills} />
-      </div>
+      <SkillsList skills={experience.skills} />
       <p className="text-justify">{experience.detail}</p>
       <div>
         <p className="font-bold">{t("tasks")}</p>

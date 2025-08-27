@@ -16,14 +16,14 @@ export const ExperienceItem = ({ entity }: ExperienceItemProps) => {
 
   return (
     <a href={`/experiences/${entity.id}`}>
-      <div className="p-4 flex flex-col gap-4 rounded-2xl bg-background-300 dark:bg-background-600">
-        <div className="flex flex-row gap-3 items-center">
+      <div className="mt-6.25 sm:mt-0 px-4 pb-4 sm:pt-4 flex flex-col gap-4 rounded-2xl bg-background-300 dark:bg-background-600">
+        <div className="-mt-6.25 sm:mt-0 flex flex-col sm:flex-row gap-1 sm:gap-3">
           <img
             src={`/experience/${entity.image}`}
             alt={entity.image}
-            className="h-28 rounded-2xl"
+            className="h-12.5 sm:h-25 w-fit mx-auto sm:mx-0 rounded-2xl"
           />
-          <div>
+          <div className="flex flex-col justify-center">
             <h3 className="text-xl font-bold">
               {entity.title} - {entity.contract}
             </h3>
@@ -36,7 +36,7 @@ export const ExperienceItem = ({ entity }: ExperienceItemProps) => {
           <h4 className="font-semibold">{entity.project}</h4>
           <p>{entity.description}</p>
         </div>
-        <SkillsList skills={entity.skills} />
+        <SkillsList skills={entity.skills} justify="start" />
       </div>
     </a>
   );

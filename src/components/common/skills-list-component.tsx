@@ -1,10 +1,11 @@
 interface SkillsListProps {
   skills: string[];
+  justify?: "start" | "center" | "end";
 }
 
-export const SkillsList = ({ skills }: SkillsListProps) => {
+export const SkillsList = ({ skills, justify = "center" }: SkillsListProps) => {
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className={`flex flex-wrap justify-${justify} gap-2`}>
       {skills.map((skill) => (
         <p
           key={skill}
