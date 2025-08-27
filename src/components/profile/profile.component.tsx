@@ -61,17 +61,15 @@ export const Profile = ({ categoriesRef }: ProfileProps) => {
           ))}
         </div>
 
-        <div className="h-12 flex flex-row justify-center items-center gap-6">
-          <a
-            href={cvPdf}
-            // download={`cv_${i18n.language}_bastien_faisant`} // Directly download the PDF file
-            target="_blank" // Open the PDF file in another tab
-            className="h-full flex justify-center items-center text-center p-3 rounded-2xl bg-primary-200 text-text-200 font-bold"
-            rel="noreferrer"
-          >
-            {t("downloadResume")}
-          </a>
-        </div>
+        <a
+          href={cvPdf}
+          // download={`cv_${i18n.language}_bastien_faisant`} // Directly download the PDF file
+          target="_blank" // Open the PDF file in another tab
+          className="btn-primary"
+          rel="noreferrer"
+        >
+          {t("downloadResume")}
+        </a>
       </div>
       <img
         src="/profile/pp.jpg"
