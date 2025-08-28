@@ -53,7 +53,9 @@ export const Profile = ({ categoriesRef }: ProfileProps) => {
         <div className="flex flex-col gap-2 sm:flex-row sm:gap-4 fill-primary-200 items-center">
           {profile.tags.map((tag, index) => (
             <Fragment key={tag}>
-              <span className="">{tag}</span>
+              <span className="text-text-secondary-light dark:text-text-secondary-dark">
+                {tag}
+              </span>
               {index < profile.tags.length - 1 && (
                 <span className="w-2 h-2 rounded-full bg-primary-200" />
               )}

@@ -28,8 +28,12 @@ export const ExperienceItem = ({ entity }: ExperienceItemProps) => {
               {entity.title} - {entity.contract}
             </h3>
             <p className="text-primary-200 font-semibold">{entity.company}</p>
-            <p>{entity.location}</p>
-            <p>{dateRange}</p>
+            <p className="text-text-secondary-light dark:text-text-secondary-dark">
+              {entity.location}
+            </p>
+            <p className="text-text-secondary-light dark:text-text-secondary-dark">
+              {dateRange}
+            </p>
           </div>
         </div>
         <div>

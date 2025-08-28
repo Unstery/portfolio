@@ -25,7 +25,9 @@ export const EducationItem = ({ entity }: EducationItemProps) => {
           <h3 className="text-xl font-bold">{entity.degree}</h3>
           <p className="text-primary-200 font-semibold">{entity.school}</p>
           <p>{entity.speciality}</p>
-          <p>{dateRange}</p>
+          <p className="text-text-secondary-light dark:text-text-secondary-dark">
+            {dateRange}
+          </p>
         </div>
       </div>
     </div>
