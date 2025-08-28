@@ -38,7 +38,7 @@ export const NavMobile = ({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="w-10 h-10 flex justify-center items-center bg-background-300 dark:bg-background-600 p-[10px] rounded-2xl cursor-pointer"
+        className="btn-icon"
       >
         <FontAwesomeIcon icon={faBars} className="w-4 h-4" />
       </button>
@@ -52,7 +52,7 @@ export const NavMobile = ({
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="w-10 h-10 flex justify-center items-center bg-background-300 dark:bg-background-600 p-[10px] rounded-2xl cursor-pointer"
+          className="btn-icon"
         >
           <FontAwesomeIcon icon={faXmark} className="w-4 h-4" />
         </button>
@@ -62,7 +62,7 @@ export const NavMobile = ({
               href={`#${category.type}`}
               key={category.id}
               onClick={handleNavClick(category.id)}
-              className={`${category.type === activeCategory ? "text-primary-200" : null} w-full h-10 px-4 py-2 flex justify-center sm:justify-start hover:rounded-2xl hover:bg-background-300 hover:dark:bg-background-600`}
+              className={`${category.type === activeCategory ? "text-primary-200" : null} w-full h-10 px-4 py-2 flex justify-center sm:justify-start hover:rounded-2xl hover:bg-background-300 hover:dark:bg-background-600 hover:text-primary-200`}
             >
               {category.title}
             </a>

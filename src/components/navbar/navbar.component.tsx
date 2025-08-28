@@ -67,7 +67,7 @@ export const Navbar = ({
             href={`/#${category.type}`}
             key={category.id}
             onClick={handleScroll(category.id)}
-            className={`${category.type === activeCategory ? "text-primary-200" : null}`}
+            className={`${category.type === activeCategory ? "text-primary-200" : null} hover:text-primary-200`}
           >
             {category.title}
           </a>
@@ -84,7 +84,7 @@ export const Navbar = ({
         href={`/#${profileCategory.type}`}
         key={profileCategory.id}
         onClick={handleScroll(profileCategory.id)}
-        className={`flex justify-center mx-4 text-2xl sm:text-2xl md:text-2xl lg:text-2xl font-bold ${profileCategory.type === activeCategory ? "text-primary-200" : null}`}
+        className={`flex justify-center mx-4 text-2xl sm:text-2xl md:text-2xl lg:text-2xl font-bold ${profileCategory.type === activeCategory ? "text-primary-200" : null} hover:text-primary-200`}
       >
         {`${profileCategory.firstName} ${profileCategory.lastName}`}
       </a>
