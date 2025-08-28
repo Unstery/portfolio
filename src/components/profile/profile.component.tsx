@@ -41,7 +41,7 @@ export const Profile = ({ categoriesRef }: ProfileProps) => {
       id={profile.type}
       className="h-[calc(100vh-80px)] w-full p-4 flex flex-col-reverse md:flex-row justify-evenly gap-4 items-center"
     >
-      <div className="flex flex-col justify-center items-center gap-16">
+      <div className="flex flex-col justify-center items-center gap-8 sm:gap-16">
         <div className="flex flex-col gap-4 text-2xl sm:text-3xl md:text-3xl lg:text-5xl xl:text-5xl">
           <span>{`${profile.welcome} ${profile.firstName} ${profile.lastName}`}</span>
           <span className="text-primary-200">{profile.status}</span>
@@ -50,10 +50,12 @@ export const Profile = ({ categoriesRef }: ProfileProps) => {
           </span>
         </div>
 
-        <div className="flex flex-row gap-4 fill-primary-200 items-center">
+        <div className="flex flex-col gap-2 sm:flex-row sm:gap-4 fill-primary-200 items-center">
           {profile.tags.map((tag, index) => (
             <Fragment key={tag}>
-              <span className="">{tag}</span>
+              <span className="text-text-secondary-light dark:text-text-secondary-dark">
+                {tag}
+              </span>
               {index < profile.tags.length - 1 && (
                 <span className="w-2 h-2 rounded-full bg-primary-200" />
               )}
