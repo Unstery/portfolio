@@ -23,8 +23,8 @@ export const ProjectPage = ({ projectId }: ProjectPageProps) => {
   );
 
   return (
-    <div className="px-5 mx-auto max-w-screen-lg mb-5 flex flex-col gap-5">
-      <div className="flex flex-col sm:flex-row justify-evenly items-center">
+    <div className="px-4 mx-auto max-w-screen-lg mb-5 flex flex-col gap-5">
+      <div className="flex flex-col sm:flex-row justify-evenly items-center text-text-secondary-light dark:text-text-secondary-dark">
         <div className="flex flex-row gap-2 items-center">
           <FontAwesomeIcon icon={faCalendar} className="w-4 h-4" />
           <p>{dateRange}</p>
@@ -33,9 +33,7 @@ export const ProjectPage = ({ projectId }: ProjectPageProps) => {
       <h2 className="text-primary-200 text-2xl font-bold text-center">
         {project.title}
       </h2>
-      <div className="flex justify-center">
-        <SkillsList skills={project.skills} />
-      </div>
+      <SkillsList skills={project.skills} />
       <p className="text-justify">{project.description}</p>
       <div className="space-y-5">
         {project.contents.map((content, index) => (

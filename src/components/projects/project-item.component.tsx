@@ -18,9 +18,11 @@ export const ProjectItem = ({ entity }: ProjectItemProps) => {
     <a href={`/projects/${entity.id}`}>
       <div className="p-4 flex flex-col gap-1 rounded-2xl bg-background-300 dark:bg-background-600">
         <h3 className="text-xl font-bold">{entity.title}</h3>
-        <p>{dateRange}</p>
+        <p className="text-text-secondary-light dark:text-text-secondary-dark">
+          {dateRange}
+        </p>
         <p>{entity.description}</p>
-        <SkillsList skills={entity.skills} />
+        <SkillsList skills={entity.skills} justify="start" />
       </div>
     </a>
   );

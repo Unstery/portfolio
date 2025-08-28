@@ -60,7 +60,7 @@ export const Navbar = ({
   }, [categories]);
 
   return (
-    <div className="navbar sticky top-0 w-full flex items-center px-8 py-5 bg-background-200 dark:bg-background-700">
+    <div className="navbar sticky top-0 w-full flex items-center px-8 py-2 bg-background-200 dark:bg-background-700">
       <div className="hidden flex-1 md:flex flex-row items-center gap-4 text-sm sm:text-sm md:text-sm lg:text-base overflow-auto ">
         {otherCategories.map((category) => (
           <a

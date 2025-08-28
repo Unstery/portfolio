@@ -19,8 +19,11 @@
   --color-background-600: #1e293c;
   --color-background-700: #1d232a;
 
-  --color-text-200: #fcfbf9;
-  --color-text-700: #121212;
+  --color-text-primary-light: #121212;
+  --color-text-secondary-light: #4d4d4d;
+
+  --color-text-primary-dark: #fcfbf9;
+  --color-text-secondary-dark: #d4d4d4;
 
   --color-black: #000000;
   --color-white: #ffffff;
@@ -38,6 +41,6 @@
   }
 
   .btn-primary {
-    @apply h-12 flex justify-center items-center text-center rounded-2xl p-3 cursor-pointer bg-primary-200 text-text-200 font-bold hover:bg-primary-300;
+    @apply h-12 flex justify-center items-center text-center rounded-2xl p-3 cursor-pointer bg-primary-200 text-text-primary-dark font-bold hover:bg-primary-300;
   }
 }
