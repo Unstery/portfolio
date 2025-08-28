@@ -7,7 +7,12 @@
 @theme {
   --color-*: initial;
 
+  --color-primary-50: #ecfeff;
+  --color-primary-100: #cffafe;
   --color-primary-200: #0891b2;
+  --color-primary-300: #0e7490;
+  --color-primary-400: #155e75;
+  --color-primary-500: #164e63;
 
   --color-background-200: #fefefe;
   --color-background-300: #efefef;
@@ -25,4 +30,14 @@
   --color-success: #2ecc71;
   --color-error: #e74c3c;
   --color-warning: #f5b00a;
+}
+
+@layer components {
+  .btn-icon {
+    @apply w-10 h-10 flex justify-center items-center rounded-2xl p-2.5 cursor-pointer bg-transparent hover:bg-background-300 hover:dark:bg-background-600 hover:text-primary-200 border border-background-300 dark:border-background-600;
+  }
+
+  .btn-primary {
+    @apply h-12 flex justify-center items-center text-center rounded-2xl p-3 cursor-pointer bg-primary-200 text-text-200 font-bold hover:bg-primary-300;
+  }
 }
