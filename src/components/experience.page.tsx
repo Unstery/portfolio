@@ -27,7 +27,7 @@ export const ExperiencePage = ({ experienceId }: ExperiencePageProps) => {
   );
 
   return (
-    <div className="px-4 mx-auto max-w-screen-lg mb-5 flex flex-col gap-5">
+    <div className="px-4 mx-auto max-w-screen-lg flex-1 flex flex-col gap-5">
       <div className="flex flex-col sm:flex-row justify-evenly items-center text-text-secondary-light dark:text-text-secondary-dark">
         <div className="flex flex-row gap-2 items-center">
           <FontAwesomeIcon icon={faFileContract} className="w-4 h-4" />
