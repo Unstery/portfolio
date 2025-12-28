@@ -5,5 +5,6 @@
     "downloadResume": "Télécharger mon CV",
     "tasks": "Tâches :",
     "teams": "Équipes :",
-    "methods": "Méthodes :"
+    "methods": "Méthodes :",
+    "copyright": "© {{year}} Bastien Faisant. Tous droits réservés."
 }

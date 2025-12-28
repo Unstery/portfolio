@@ -5,5 +5,6 @@
     "downloadResume": "Download my resume",
     "tasks": "Tasks:",
     "teams": "Teams:",
-    "methods": "Methods:"
+    "methods": "Methods:",
+    "copyright": "© {{year}} Bastien Faisant. All rights reserved."
 }
