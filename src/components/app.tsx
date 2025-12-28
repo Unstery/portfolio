@@ -12,6 +12,7 @@ import { ExperiencePage } from "./experience.page";
 import { Navbar } from "./navbar";
 import { ThemeProvider } from "../modules/theme";
 import { ProjectPage } from "./project.page";
+import { Footer } from "./footer";
 
 const resources = {
   en: {
@@ -57,23 +58,26 @@ export const App = ({ category, entityId }: AppProps) => {
       <I18nextProvider i18n={i18n}>
         <PortfolioProvider>
           <ThemeProvider>
-            <Navbar
-              categoriesRef={categoriesRef}
-              activeCategory={activeCategory}
-              setActiveCategory={setActiveCategory}
-            />
-            {category === CategoryEnum.PROFILE && (
-              <PortfolioPage
+            <div className="min-h-screen flex flex-col">
+              <Navbar
                 categoriesRef={categoriesRef}
+                activeCategory={activeCategory}
                 setActiveCategory={setActiveCategory}
               />
-            )}
-            {category === CategoryEnum.EXPERIENCE && (
-              <ExperiencePage experienceId={entityId!} />
-            )}
-            {category === CategoryEnum.PROJECT && (
-              <ProjectPage projectId={entityId!} />
-            )}
+              {category === CategoryEnum.PROFILE && (
+                <PortfolioPage
+                  categoriesRef={categoriesRef}
+                  setActiveCategory={setActiveCategory}
+                />
+              )}
+              {category === CategoryEnum.EXPERIENCE && (
+                <ExperiencePage experienceId={entityId!} />
+              )}
+              {category === CategoryEnum.PROJECT && (
+                <ProjectPage projectId={entityId!} />
+              )}
+              <Footer />
+            </div>
           </ThemeProvider>
         </PortfolioProvider>
       </I18nextProvider>

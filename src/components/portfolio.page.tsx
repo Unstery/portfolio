@@ -38,7 +38,7 @@ export const PortfolioPage = ({
   }, [setActiveCategory]);
 
   return (
-    <div className="px-4 mx-auto mb-5 flex flex-col gap-5 justify-center items-center">
+    <div className="px-4 mx-auto flex-1 flex flex-col gap-5 justify-center items-center">
       <Profile categoriesRef={categoriesRef} />
       <div className="mx-auto max-w-screen-lg flex flex-col gap-5 justify-center items-center">
         <Experience categoriesRef={categoriesRef} />
