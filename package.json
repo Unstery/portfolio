@@ -10,8 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^4.0.0",
-    "@astrojs/vercel": "^9.0.0",
+    "@astrojs/react": "^6.0.0",
+    "@astrojs/vercel": "^11.0.0",
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
     "@fortawesome/free-brands-svg-icons": "^7.0.0",
     "@fortawesome/free-regular-svg-icons": "^7.0.0",
@@ -22,32 +22,32 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@types/react-syntax-highlighter": "^15.5.13",
-    "astro": "^5.0.0",
-    "i18next": "^25.0.0",
+    "astro": "^7.0.0",
+    "i18next": "^26.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-i18next": "^16.0.0",
+    "react-i18next": "^17.0.0",
     "react-markdown": "^10.0.0",
-    "react-syntax-highlighter": "^15.6.1",
+    "react-syntax-highlighter": "^16.0.0",
     "remark-gfm": "^4.0.1",
     "tailwindcss": "^4.0.17"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.23.0",
+    "@eslint/js": "^10.0.0",
     "@tailwindcss/typography": "^0.5.16",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
-    "eslint": "^9.0.0",
-    "eslint-plugin-astro": "^1.0.0",
+    "eslint": "^10.0.0",
+    "eslint-plugin-astro": "^3.0.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-n": "^17.0.0",
+    "eslint-plugin-n": "^18.0.0",
     "eslint-plugin-promise": "^7.0.0",
     "eslint-plugin-react": "^7.33.2",
     "prettier": "^3.0.3",
     "prettier-config-standard": "^7.0.0",
     "prettier-plugin-astro": "^0.14.0",
-    "typescript": "^5.2.2"
+    "typescript": "^7.0.0"
   }
 }
